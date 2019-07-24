@@ -1,43 +1,149 @@
 @import 'config';
+@import 'typography';
+
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
   padding: 0;
 }
 
-img {
-  width: 250px;
-}
-
 body {
-  color: $dark-gray;
-  background: $blue;
+  color: #fff;
+  background: $orange;
+  font: 18px/1.9em $f-Ubuntu;
 }
 
+/* Nav styling */
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  &-ul {
+    display: flex;
+    width: 25%;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    list-style-type: none;
+    justify-content: space-between;
+    font-weight: bold;
+    li.current > a {
+      color: $malachite;
+    }
+  }
+}
+/* Nav end */
 #home {
   @include background;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  nav {
-    width: 50%;
-    flex-basis: 20%;
-    align-self: center;
-    background: ($gray, 0.8);
-    ul {
-      width: 100%;
+
+  /* header-info */
+  .header-info {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+
+    &_content {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    h3 {
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    &_social {
+      width: 30%;
+      display: flex;
+      margin: 0 auto;
+      margin-top: 2.5em;
       list-style-type: none;
       justify-content: space-between;
-      li > a {
-        color: $dark-gray;
+      z-index: 2;
+    }
+  }
+
+  .btn-down {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    & > a {
+      @include easeOut();
+    }
+  }
+}
+
+#about {
+  background: $dark-gray;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+
+  .about-img {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding-top: 4em;
+
+    img {
+      border: $malachite 3px solid;
+    }
+  }
+
+  .about-info {
+    flex: 4;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    &_content {
+      width: 70%;
+      margin: 0 auto;
+    }
+    &_details {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1.5em;
+      .address {
+        flex: 1;
+      }
+
+      .resume-btn {
+        flex: 1;
+        display: block;
+        box-sizing: border-box;
+
+        &_wrapper {
+          display: inline-block;
+          margin: 1.5rem;
+          padding: 0.7rem;
+          position: relative;
+          top: 80%;
+          background: lighten($dark-gray, 10);
+          i {
+            padding: 0.6rem;
+          }
+        }
       }
     }
   }
 
-  .header-info {
-    flex-basis: 80%;
+  .profile-img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%;
   }
 }

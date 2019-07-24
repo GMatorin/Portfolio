@@ -13,56 +13,57 @@
     <title>My Portfolio</title>
   </head>
   <body>
+    <nav id="menu">
+      <ul id="menu-ul">
+        <li class="menu-ul_item current">
+          <a class="smoothscroll" href="#home">Home</a>
+        </li>
+        <li class="menu-ul_item">
+          <a class="smoothscroll" href="#about">About</a>
+        </li>
+        <li class="menu-ul_item">
+          <a class="smoothscroll" href="#skills">Skills</a>
+        </li>
+        <li class="menu-ul_item">
+          <a class="smoothscroll" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="menu-ul_item">
+          <a class="smoothscroll" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <header id="home">
-      <nav id="menu">
-        <ul id="menu-ul">
-          <li class="menu-ul_item current">
-            <a class="smoothscroll" href="#home">Home</a>
-          </li>
-          <li class="menu-ul_item">
-            <a class="smoothscroll" href="#about">About</a>
-          </li>
-          <li class="menu-ul_item">
-            <a class="smoothscroll" href="#skills">Skills</a>
-          </li>
-          <li class="menu-ul_item">
-            <a class="smoothscroll" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="menu-ul_item">
-            <a class="smoothscroll" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
       <div class="header-info">
-        <h1>Hi, I'm Gleb!</h1>
-        <h3 class="sm-heading">
-          I'm a <span class="text-secondary"> NYC</span> based Lorem ipsum dolor
-          sit amet consectetur adipisicing elit. Quisquam, similique voluptate
-          voluptatem harum, nam blanditiis nostrum quas eveniet illum unde sunt
-          velit assumenda sapiente quidem.
-        </h3>
-        <ul class="header-info_social">
-          <li>
-            <a href="#"><i class="fab fa-github"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </li>
-        </ul>
+        <div class="header-info_content">
+          <h1>Hi, I'm <span class="text-secondary">Gleb!</span></h1>
+          <h3 class="sm-heading">
+            I'm a <span class="text-secondary"> NYC</span> based Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Quisquam, similique
+            voluptate voluptatem harum, nam blanditiis nostrum quas eveniet
+            illum unde sunt velit assumenda sapiente quidem.
+          </h3>
+          <ul class="header-info_social">
+            <li>
+              <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <p class="btn-down">
+      <div class="btn-down">
         <a class="btn-down_link btn-light" href="#about"
-          ><i class="fa fa-chevron-circle-down"></i
+          ><i class="fa fa-chevron-circle-down fa-3x"></i
         ></a>
-      </p>
+      </div>
     </header>
 
     <section id="about">
@@ -70,40 +71,42 @@
         <img class="profile-img" src="images/profilepic.jpg" alt="" />
       </div>
       <div class="about-info">
-        <h2 class="lg-heading">About Me</h2>
+        <div class="about-info_content">
+          <h2 class="lg-heading">About Me</h2>
 
-        <p class="regular-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-          illum sequi hic accusantium exercitationem perspiciatis nulla quaerat
-          officia veritatis, ut animi cum expedita voluptates aspernatur laborum
-          ducimus porro molestias eaque quisquam rem! Ipsa voluptate temporibus
-          commodi odio eveniet facilis praesentium debitis. Suscipit, vel? Non
-          corrupti nostrum laudantium praesentium maiores culpa facilis
-          blanditiis libero nemo porro numquam repellendus itaque quos eligendi
-          quisquam unde molestias nam, deserunt delectus qui voluptatum omnis
-          et?
-        </p>
+          <p class="regular-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+            illum sequi hic accusantium exercitationem perspiciatis nulla
+            quaerat officia veritatis, ut animi cum expedita voluptates
+            aspernatur laborum ducimus porro molestias eaque quisquam rem! Ipsa
+            voluptate temporibus commodi odio eveniet facilis praesentium
+            debitis. Suscipit, vel? Non corrupti nostrum laudantium praesentium
+            maiores culpa facilis blanditiis libero nemo porro numquam
+            repellendus itaque quos eligendi quisquam unde molestias nam,
+            deserunt delectus qui voluptatum omnis et?
+          </p>
 
-        <div class="about-info_details">
-          <div class="address">
-            <h2 class="sm-heading">Contact Details</h2>
-            <p class="regular-text">
-              <span class="text-secondary">Gleb Matorin</span><br />
-              <span class="text-secondary"
-                >Adr<br />
-                Adr </span
-              ><br />
-              <span class="text-secondary">Phone</span><br />
-              <span class="text-secondary">email</span>
-            </p>
-          </div>
+          <div class="about-info_details">
+            <div class="address">
+              <h2 class="sm-heading">Contact Details</h2>
+              <p class="regular-text">
+                <span class="text-secondary">Gleb Matorin</span><br />
+                <span class="text-secondary"
+                  >Adr<br />
+                  Adr </span
+                ><br />
+                <span class="text-secondary">Phone</span><br />
+                <span class="text-secondary">email</span>
+              </p>
+            </div>
 
-          <div class="resume-btn">
-            <p>
-              <a href="#" class="resume-btn_link btn-dark"
-                ><i class="fa fa-download"></i>Download Resume</a
-              >
-            </p>
+            <div class="resume-btn">
+              <div class="resume-btn_wrapper">
+                <a href="#" class="resume-btn_link btn-dark"
+                  ><i class="fa fa-download"></i>Download Resume</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>

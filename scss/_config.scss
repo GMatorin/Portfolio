@@ -1,13 +1,20 @@
 $light-gray: #c8cbce;
-$blue: #3667a4;
+$dark-blue: #3667a4;
+$blue: #3c84bc;
+$light-blue: #84b6d6;
 $orange: #e94f37;
 $gray: #393e41;
+$malachite: #5efc8d;
 $dark-gray: #253031;
 $home-image: url(../images/header-background.JPG);
 $background-opacity: 0.9;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
+}
+
+@mixin easeIn {
+  transition: all 0.3s ease-in;
 }
 
 @mixin background {
@@ -25,9 +32,41 @@ $background-opacity: 0.9;
   }
 }
 
-a {
-  text-decoration: none;
-  i {
-    color: $dark-gray;
+@mixin link {
+  &:hover {
+    color: $malachite;
+    @include easeIn();
   }
+}
+
+/* Global definitions */
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  &:hover {
+    @include link;
+  }
+}
+
+/* Text configs */
+
+.text-secondary {
+  color: $malachite;
+}
+h1 {
+  font-size: 5rem;
+  margin: 0.5em;
+}
+.lg-heading {
+  font-size: 2.5rem;
+}
+
+.regular-text {
+  font-size: 1.1rem;
+}
+
+.sm-heading {
+  font-size: 1.5rem;
 }

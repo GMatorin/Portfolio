@@ -1,26 +1,68 @@
+/* Global definitions */
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Oxygen|Poppins|Rubik|Ubuntu:400,700|Varela+Round&display=swap");
 a {
-  text-decoration: none; }
-  a i {
-    color: #253031; }
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem; }
+  a:hover:hover {
+    color: #5efc8d;
+    transition: all 0.3s ease-in; }
+
+/* Text configs */
+.text-secondary {
+  color: #5efc8d; }
+
+h1 {
+  font-size: 5rem;
+  margin: 0.5em; }
+
+.lg-heading {
+  font-size: 2.5rem; }
+
+.regular-text {
+  font-size: 1.1rem; }
+
+.sm-heading {
+  font-size: 1.5rem; }
+
+html {
+  scroll-behavior: smooth; }
 
 * {
   margin: 0;
   padding: 0; }
 
-img {
-  width: 250px; }
-
 body {
-  color: #253031;
-  background: #3667a4; }
+  color: #fff;
+  background: #e94f37;
+  font: 18px/1.9em "Ubuntu", sans-serif; }
 
+/* Nav styling */
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 0; }
+  #menu-ul {
+    display: flex;
+    width: 25%;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    list-style-type: none;
+    justify-content: space-between;
+    font-weight: bold; }
+    #menu-ul li.current > a {
+      color: #5efc8d; }
+
+/* Nav end */
 #home {
   background: url(../images/header-background.JPG);
   background-size: cover;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
+  /* header-info */ }
   #home:after {
     content: '';
     position: absolute;
@@ -29,18 +71,78 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1; }
-  #home nav {
-    width: 50%;
-    flex-basis: 20%;
-    align-self: center;
-    background: #393e41, 0.8; }
-    #home nav ul {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      list-style-type: none;
-      justify-content: space-between; }
-      #home nav ul li > a {
-        color: #253031; }
   #home .header-info {
-    flex-basis: 80%; }
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 25%; }
+    #home .header-info_content {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin: 0 auto; }
+    #home .header-info h3 {
+      width: 85%;
+      margin: 0 auto; }
+    #home .header-info_social {
+      width: 30%;
+      display: flex;
+      margin: 0 auto;
+      margin-top: 2.5em;
+      list-style-type: none;
+      justify-content: space-between;
+      z-index: 2; }
+  #home .btn-down {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+    z-index: 5; }
+    #home .btn-down > a {
+      transition: all 0.5s ease-out; }
+
+#about {
+  background: #253031;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around; }
+  #about .about-img {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding-top: 4em; }
+    #about .about-img img {
+      border: #5efc8d 3px solid; }
+  #about .about-info {
+    flex: 4;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em; }
+    #about .about-info_content {
+      width: 70%;
+      margin: 0 auto; }
+    #about .about-info_details {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 1.5em; }
+      #about .about-info_details .address {
+        flex: 1; }
+      #about .about-info_details .resume-btn {
+        flex: 1;
+        display: block;
+        box-sizing: border-box; }
+        #about .about-info_details .resume-btn_wrapper {
+          display: inline-block;
+          margin: 1.5rem;
+          padding: 0.7rem;
+          position: relative;
+          top: 80%;
+          background: #3b4c4e; }
+          #about .about-info_details .resume-btn_wrapper i {
+            padding: 0.6rem; }
+  #about .profile-img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50%; }
