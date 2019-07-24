@@ -1,0 +1,43 @@
+@import 'config';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 250px;
+}
+
+body {
+  color: $dark-gray;
+  background: $blue;
+}
+
+#home {
+  @include background;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  nav {
+    width: 50%;
+    flex-basis: 20%;
+    align-self: center;
+    background: ($gray, 0.8);
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      justify-content: space-between;
+      li > a {
+        color: $dark-gray;
+      }
+    }
+  }
+
+  .header-info {
+    flex-basis: 80%;
+  }
+}
