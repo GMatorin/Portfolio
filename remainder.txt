@@ -1,5 +1,0 @@
-3. #home styles
-
-2. <section id="about"> comparison with ceevee project
-
-1. Start with id="portfolio"
