@@ -6,8 +6,30 @@ $orange: #e94f37;
 $gray: #393e41;
 $malachite: #5efc8d;
 $dark-gray: #253031;
+$dark-red: #3c1518;
+$dark-purple: #380036;
+$aqua-blue: #01baef;
+$tiffany-blue: #0cbaba;
 $home-image: url(../images/header-background.JPG);
 $background-opacity: 0.9;
+
+/* Mixins */
+
+@mixin pulse {
+  animation: pulse 3s infinite linear;
+
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -39,6 +61,36 @@ $background-opacity: 0.9;
   }
 }
 
+@mixin skills {
+  flex: 1;
+  padding-top: 4em;
+  &-header {
+    display: flex;
+    justify-content: center;
+    i {
+      margin-left: 0.5em;
+      @include pulse();
+    }
+  }
+
+  &-main {
+    padding: 1em 4em 0 4em;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(3, 1fr);
+
+    &_item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      i {
+        padding-bottom: 0.2em;
+        //color:$aqua-blue;
+      }
+    }
+  }
+}
+
 /* Global definitions */
 
 a {
@@ -53,14 +105,15 @@ a {
 /* Text configs */
 
 .text-secondary {
-  color: $malachite;
+  color: darken($orange, 2);
 }
 h1 {
   font-size: 5rem;
   margin: 0.5em;
 }
 .lg-heading {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.5em;
 }
 
 .regular-text {
@@ -69,4 +122,10 @@ h1 {
 
 .sm-heading {
   font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.m-heading {
+  font-size: 1.2rem;
+  font-weight: 100;
 }

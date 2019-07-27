@@ -8,12 +8,14 @@ html {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   color: #fff;
   background: $orange;
   font: 18px/1.9em $f-Ubuntu;
+  min-height: 1080px;
 }
 
 /* Nav styling */
@@ -27,7 +29,7 @@ body {
   top: 0;
   &-ul {
     display: flex;
-    width: 25%;
+    width: 35%;
     margin: 0 auto;
     padding-top: 0.5em;
     list-style-type: none;
@@ -79,6 +81,7 @@ body {
     width: 100%;
     text-align: center;
     z-index: 5;
+    opacity: 0.9;
     & > a {
       @include easeOut();
     }
@@ -91,25 +94,32 @@ body {
   display: flex;
   justify-content: space-around;
 
+  .regular-text {
+    color: $light-gray;
+  }
+  .text-secondary {
+    color: $light-blue;
+  }
+
   .about-img {
     display: flex;
-    flex: 1;
+    flex: 2;
     justify-content: center;
     padding-top: 4em;
 
     img {
-      border: $malachite 3px solid;
+      border: $light-blue 3px solid;
     }
   }
 
   .about-info {
-    flex: 4;
+    flex: 3;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
     padding-top: 2em;
+    padding-right: 10em;
     &_content {
-      width: 70%;
       margin: 0 auto;
     }
     &_details {
@@ -123,17 +133,25 @@ body {
       .resume-btn {
         flex: 1;
         display: block;
-        box-sizing: border-box;
 
         &_wrapper {
           display: inline-block;
-          margin: 1.5rem;
-          padding: 0.7rem;
-          position: relative;
-          top: 80%;
           background: lighten($dark-gray, 10);
+          margin-top: 1em;
+          padding: 0.5rem 0.6rem;
+          border-radius: 5px;
+
+          &:hover {
+            background: $dark-gray;
+            background: white;
+            @include easeIn();
+            a {
+              color: #000;
+              @include easeIn();
+            }
+          }
           i {
-            padding: 0.6rem;
+            margin-right: 0.5rem;
           }
         }
       }
@@ -145,5 +163,32 @@ body {
     width: 250px;
     object-fit: cover;
     border-radius: 50%;
+  }
+}
+
+.skills {
+  height: 55vh;
+  background: darken($dark-blue, 22);
+  display: flex;
+  justify-content: space-around;
+
+  .skillset {
+    @include skills();
+    &-main {
+      border-right: 1px solid lighten($dark-blue, 15);
+    }
+    color: lighten($tiffany-blue, 10);
+  }
+  .tools {
+    @include skills();
+
+    color: lighten($aqua-blue, 5);
+  }
+}
+
+#portfolio {
+  background: $dark-purple;
+  img {
+    width: 250px;
   }
 }
