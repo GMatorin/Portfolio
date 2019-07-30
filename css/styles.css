@@ -11,7 +11,7 @@ a {
 
 /* Text configs */
 .text-secondary {
-  color: #e8472e; }
+  color: #fffc4b; }
 
 h1 {
   font-size: 5rem;
@@ -152,7 +152,6 @@ body {
           padding: 0.5rem 0.6rem;
           border-radius: 5px; }
           #about .about-info_details .resume-btn_wrapper:hover {
-            background: #253031;
             background: white;
             transition: all 0.3s ease-in; }
             #about .about-info_details .resume-btn_wrapper:hover a {
@@ -168,7 +167,7 @@ body {
 
 .skills {
   height: 55vh;
-  background: #1a3250;
+  background: #162b44;
   display: flex;
   justify-content: space-around; }
   .skills .skillset {
@@ -232,7 +231,62 @@ body {
         .skills .tools-main_item i {
           padding-bottom: 0.2em; }
 
-#portfolio {
-  background: #380036; }
-  #portfolio img {
-    width: 250px; }
+.portfolio {
+  background: #213e63;
+  color: #c8cbce;
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .portfolio-head {
+    text-align: center; }
+  .portfolio-projects {
+    display: grid;
+    padding: 3em 7em 4em 7em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em; }
+    .portfolio-projects_item {
+      background: #24456e; }
+      .portfolio-projects_item img {
+        width: 100%;
+        filter: brightness(70%);
+        z-index: 15; }
+        .portfolio-projects_item img:hover {
+          filter: brightness(55%);
+          transition: all 0.3s ease-in; }
+      .portfolio-projects_item .project-description {
+        padding: 0.7em; }
+        .portfolio-projects_item .project-description h2 {
+          color: #fff; }
+          .portfolio-projects_item .project-description h2::after {
+            content: '';
+            display: block;
+            margin-top: 0.3em;
+            width: 100%;
+            background-color: #3c73b7;
+            height: 1px; }
+        .portfolio-projects_item .project-description .regular-text {
+          padding-top: 0.3em; }
+      .portfolio-projects_item .project-buttons {
+        display: flex;
+        justify-content: space-around;
+        padding: 1em 0 2em 0; }
+        .portfolio-projects_item .project-buttons a {
+          flex-basis: 40%;
+          background: #253031;
+          border-radius: 5px; }
+          .portfolio-projects_item .project-buttons a:hover {
+            transition: all 0.3s ease-in;
+            background: white;
+            color: #000; }
+          .portfolio-projects_item .project-buttons a i {
+            display: inline-block;
+            padding: 0 0.5em 0 0.5em; }
+
+#contact {
+  background: #305b91;
+  height: 50vh;
+  color: #c8cbce; }
+
+footer {
+  background: #253031; }

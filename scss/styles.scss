@@ -142,7 +142,6 @@ body {
           border-radius: 5px;
 
           &:hover {
-            background: $dark-gray;
             background: white;
             @include easeIn();
             a {
@@ -168,7 +167,7 @@ body {
 
 .skills {
   height: 55vh;
-  background: darken($dark-blue, 22);
+  background: darken($dark-blue, 25);
   display: flex;
   justify-content: space-around;
 
@@ -186,9 +185,83 @@ body {
   }
 }
 
-#portfolio {
-  background: $dark-purple;
-  img {
-    width: 250px;
+.portfolio {
+  background: darken($dark-blue, 17);
+  color: $light-gray;
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-head {
+    text-align: center;
   }
+
+  &-projects {
+    display: grid;
+    padding: 3em 7em 4em 7em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+    &_item {
+      background: darken($dark-blue, 14);
+
+      img {
+        width: 100%;
+        filter: brightness(70%);
+        z-index: 15;
+        &:hover {
+          filter: brightness(55%);
+          @include easeIn;
+        }
+      }
+
+      .project-description {
+        padding: 0.7em;
+        h2 {
+          color: #fff;
+          &::after {
+            content: '';
+            display: block;
+            margin-top: 0.3em;
+            width: 100%;
+            background-color: lighten($dark-blue, 5);
+            height: 1px;
+          }
+        }
+        .regular-text {
+          padding-top: 0.3em;
+        }
+      }
+      .project-buttons {
+        display: flex;
+        justify-content: space-around;
+        padding: 1em 0 2em 0;
+        a {
+          flex-basis: 40%;
+          background: $dark-gray;
+          border-radius: 5px;
+          &:hover {
+            @include easeIn();
+            background: white;
+            color: #000;
+          }
+
+          i {
+            display: inline-block;
+            padding: 0 0.5em 0 0.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+#contact {
+  background: darken($dark-blue, 5);
+  height: 50vh;
+  color: $light-gray;
+}
+
+footer {
+  background: $dark-gray;
 }

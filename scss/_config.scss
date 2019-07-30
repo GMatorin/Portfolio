@@ -2,14 +2,19 @@ $light-gray: #c8cbce;
 $dark-blue: #3667a4;
 $blue: #3c84bc;
 $light-blue: #84b6d6;
-$orange: #e94f37;
 $gray: #393e41;
+$aqua-blue: #01baef;
+$tiffany-blue: #0cbaba;
 $malachite: #5efc8d;
+$light-green: #3ec300;
+$orange: #e94f37;
+$pink: #b8336a;
 $dark-gray: #253031;
 $dark-red: #3c1518;
 $dark-purple: #380036;
-$aqua-blue: #01baef;
-$tiffany-blue: #0cbaba;
+$mango: #f3c969;
+$light-yellow: #fffc31;
+
 $home-image: url(../images/header-background.JPG);
 $background-opacity: 0.9;
 
@@ -105,7 +110,8 @@ a {
 /* Text configs */
 
 .text-secondary {
-  color: darken($orange, 2);
+  //color: #f7ef81;
+  color: lighten($light-yellow, 5);
 }
 h1 {
   font-size: 5rem;
