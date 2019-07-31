@@ -13,7 +13,6 @@ html {
 
 body {
   color: #fff;
-  background: $orange;
   font: 18px/1.9em $f-Ubuntu;
   min-height: 1080px;
 }
@@ -90,7 +89,7 @@ body {
 
 #about {
   background: $dark-gray;
-  height: 80vh;
+  height: 85vh;
   display: flex;
   justify-content: space-around;
 
@@ -105,7 +104,7 @@ body {
     display: flex;
     flex: 2;
     justify-content: center;
-    padding-top: 4em;
+    padding-top: 8em;
 
     img {
       border: $light-blue 3px solid;
@@ -117,7 +116,7 @@ body {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
-    padding-top: 2em;
+    padding-top: 4em;
     padding-right: 10em;
     &_content {
       margin: 0 auto;
@@ -166,7 +165,7 @@ body {
 }
 
 .skills {
-  height: 55vh;
+  height: 65vh;
   background: darken($dark-blue, 25);
   display: flex;
   justify-content: space-around;
@@ -186,7 +185,7 @@ body {
 }
 
 .portfolio {
-  background: darken($dark-blue, 17);
+  background: darken($dark-blue, 19);
   color: $light-gray;
   padding-top: 3em;
   display: flex;
@@ -204,10 +203,9 @@ body {
     grid-gap: 2em;
     &_item {
       background: darken($dark-blue, 14);
-
       img {
         width: 100%;
-        filter: brightness(70%);
+        filter: brightness(80%);
         z-index: 15;
         &:hover {
           filter: brightness(55%);
@@ -237,13 +235,16 @@ body {
         justify-content: space-around;
         padding: 1em 0 2em 0;
         a {
-          flex-basis: 40%;
-          background: $dark-gray;
+          flex-basis: 42%;
+          background: darken($light-gray, 10);
+          border: $dark-gray 1px solid;
+          color: #000;
           border-radius: 5px;
           &:hover {
             @include easeIn();
-            background: white;
-            color: #000;
+            background: lighten($dark-gray, 5);
+            border: $purple 1px solid;
+            color: #fff;
           }
 
           i {
@@ -256,12 +257,77 @@ body {
   }
 }
 
-#contact {
-  background: darken($dark-blue, 5);
-  height: 50vh;
+.contact {
+  background: $dark-gray;
   color: $light-gray;
+  height: 70vh;
+
+  &-header {
+    text-align: center;
+    padding-top: 3em;
+    color: #fff;
+  }
+
+  &-infos {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 3em;
+    justify-content: space-between;
+    &_item {
+      background: lighten($dark-gray, 5);
+      flex-basis: 29%;
+      text-align: center;
+      border: $dark-blue 1px solid;
+      @include easeInOut();
+      a {
+        color: $light-gray;
+      }
+      &:hover {
+        transform: translateY(-10%);
+        background: lighten($dark-gray, 8);
+        a {
+          color: $tiffany-blue;
+        }
+      }
+      .item-heading {
+        padding: 2em 0 0.7em 0;
+
+        i {
+          color: $aqua-blue;
+        }
+
+        h3 {
+          padding-top: 1em;
+          color: #fff;
+          &::after {
+            content: '';
+            display: block;
+            margin: 0 auto;
+            margin-top: 0.3em;
+            width: 30%;
+            background-color: $dark-blue;
+            height: 1px;
+          }
+        }
+      }
+
+      p {
+        padding-bottom: 2em;
+      }
+    }
+  }
 }
 
 footer {
-  background: $dark-gray;
+  background: darken($dark-gray, 7);
+  position: relative;
+  .btn-up {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: block;
+    top: -27px;
+    opacity: 0.8;
+  }
 }

@@ -1,15 +1,16 @@
+$dark-gray: #253031;
+$gray: #393e41;
 $light-gray: #c8cbce;
 $dark-blue: #3667a4;
+$purple: #505393;
 $blue: #3c84bc;
 $light-blue: #84b6d6;
-$gray: #393e41;
 $aqua-blue: #01baef;
 $tiffany-blue: #0cbaba;
 $malachite: #5efc8d;
 $light-green: #3ec300;
 $orange: #e94f37;
 $pink: #b8336a;
-$dark-gray: #253031;
 $dark-red: #3c1518;
 $dark-purple: #380036;
 $mango: #f3c969;
@@ -42,6 +43,10 @@ $background-opacity: 0.9;
 
 @mixin easeIn {
   transition: all 0.3s ease-in;
+}
+
+@mixin easeInOut {
+  transition: all 0.5s ease-in-out;
 }
 
 @mixin background {
@@ -111,7 +116,7 @@ a {
 
 .text-secondary {
   //color: #f7ef81;
-  color: lighten($light-yellow, 5);
+  //color: $light-yellow;
 }
 h1 {
   font-size: 5rem;
