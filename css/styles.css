@@ -6,7 +6,7 @@ a {
   text-decoration: none;
   font-size: 1.1rem; }
   a:hover:hover {
-    color: #5efc8d;
+    color: #1df0f0;
     transition: all 0.3s ease-in; }
 
 /* Text configs */
@@ -28,6 +28,14 @@ h1 {
 .m-heading {
   font-size: 1.2rem;
   font-weight: 100; }
+
+.nav-background-main {
+  transition: all 0.3s ease-in;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.nav-remove {
+  transition: all 0.3s ease-in;
+  opacity: 0; }
 
 html {
   scroll-behavior: smooth; }
@@ -55,12 +63,12 @@ body {
     display: flex;
     width: 35%;
     margin: 0 auto;
-    padding-top: 0.5em;
+    padding: 0.3em 0 0.3em 0;
     list-style-type: none;
     justify-content: space-between;
     font-weight: bold; }
     #menu-ul li.current > a {
-      color: #5efc8d; }
+      color: #1df0f0; }
 
 /* Nav end */
 #home {
@@ -97,6 +105,8 @@ body {
       list-style-type: none;
       justify-content: space-between;
       z-index: 2; }
+      #home .header-info_social a:hover {
+        color: #3a6eb0; }
   #home .btn-down {
     position: absolute;
     top: 90%;
@@ -128,7 +138,7 @@ body {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
-    padding-top: 4em;
+    padding-top: 5em;
     padding-right: 10em; }
     #about .about-info_content {
       margin: 0 auto; }
@@ -228,7 +238,7 @@ body {
           padding-bottom: 0.2em; }
 
 .portfolio {
-  background: #1e395b;
+  background: #1b3453;
   color: #c8cbce;
   padding-top: 3em;
   display: flex;
@@ -304,11 +314,11 @@ body {
       transition: all 0.5s ease-in-out; }
       .contact-infos_item a {
         color: #c8cbce; }
+        .contact-infos_item a:hover {
+          color: #0cbaba; }
       .contact-infos_item:hover {
         transform: translateY(-10%);
         background: #374748; }
-        .contact-infos_item:hover a {
-          color: #0cbaba; }
       .contact-infos_item .item-heading {
         padding: 2em 0 0.7em 0; }
         .contact-infos_item .item-heading i {
@@ -329,7 +339,10 @@ body {
 
 footer {
   background: #161c1d;
-  position: relative; }
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 3.5em 0 2.5em 0; }
   footer .btn-up {
     position: absolute;
     width: 100%;
@@ -337,3 +350,7 @@ footer {
     display: block;
     top: -27px;
     opacity: 0.8; }
+  footer .icons {
+    margin-bottom: 1em; }
+    footer .icons a {
+      margin: 0 1em 0 1em; }

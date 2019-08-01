@@ -66,7 +66,7 @@ $background-opacity: 0.9;
 
 @mixin link {
   &:hover {
-    color: $malachite;
+    color: lighten($tiffany-blue, 14);
     @include easeIn();
   }
 }
@@ -139,4 +139,14 @@ h1 {
 .m-heading {
   font-size: 1.2rem;
   font-weight: 100;
+}
+
+.nav-background-main {
+  @include easeIn();
+  background-color: rgba(#000, 0.7);
+}
+
+.nav-remove {
+  @include easeIn();
+  opacity: 0;
 }

@@ -30,12 +30,12 @@ body {
     display: flex;
     width: 35%;
     margin: 0 auto;
-    padding-top: 0.5em;
+    padding: 0.3em 0 0.3em 0;
     list-style-type: none;
     justify-content: space-between;
     font-weight: bold;
     li.current > a {
-      color: $malachite;
+      color: lighten($tiffany-blue, 14);
     }
   }
 }
@@ -71,6 +71,10 @@ body {
       list-style-type: none;
       justify-content: space-between;
       z-index: 2;
+
+      a:hover {
+        color: lighten($dark-blue, 3);
+      }
     }
   }
 
@@ -116,7 +120,7 @@ body {
     flex-direction: column;
     display: flex;
     justify-content: space-between;
-    padding-top: 4em;
+    padding-top: 5em;
     padding-right: 10em;
     &_content {
       margin: 0 auto;
@@ -185,7 +189,7 @@ body {
 }
 
 .portfolio {
-  background: darken($dark-blue, 19);
+  background: darken($dark-blue, 21);
   color: $light-gray;
   padding-top: 3em;
   display: flex;
@@ -282,13 +286,13 @@ body {
       @include easeInOut();
       a {
         color: $light-gray;
+        &:hover {
+          color: $tiffany-blue;
+        }
       }
       &:hover {
         transform: translateY(-10%);
         background: lighten($dark-gray, 8);
-        a {
-          color: $tiffany-blue;
-        }
       }
       .item-heading {
         padding: 2em 0 0.7em 0;
@@ -322,6 +326,11 @@ body {
 footer {
   background: darken($dark-gray, 7);
   position: relative;
+
+  display: block;
+  text-align: center;
+  padding: 3.5em 0 2.5em 0;
+
   .btn-up {
     position: absolute;
     width: 100%;
@@ -329,5 +338,12 @@ footer {
     display: block;
     top: -27px;
     opacity: 0.8;
+  }
+
+  .icons {
+    margin-bottom: 1em;
+    a {
+      margin: 0 1em 0 1em;
+    }
   }
 }
