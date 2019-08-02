@@ -156,3 +156,34 @@ h1 {
   @include easeIn();
   opacity: 0;
 }
+
+// Media Query Mixins
+@mixin mediaXs {
+  @media screen and(max-width:400px) {
+    @content;
+  }
+}
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (max-width: 1022px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1023px) and (max-width: 1200px) {
+    @content;
+  }
+}

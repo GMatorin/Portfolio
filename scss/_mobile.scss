@@ -1,0 +1,296 @@
+@include mediaXl {
+  #home {
+    .header-info {
+      top: 17%;
+
+      &_social {
+        margin-top: 1.5em;
+      }
+    }
+  }
+}
+
+@include mediaLg {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #menu {
+    a {
+      font-size: 1.1rem;
+    }
+    &-ul {
+      width: 55%;
+    }
+  }
+
+  #home {
+    .header-info {
+      top: 17%;
+
+      &_content {
+        width: 70%;
+        h1 {
+          font-size: 4rem;
+        }
+        .lg-heading {
+          font-size: 1.2rem;
+        }
+      }
+      &_social {
+        margin-top: 1.3em;
+      }
+    }
+  }
+
+  .about {
+    flex-direction: column;
+    height: 105vh;
+    display: block;
+
+    &-img {
+      padding-top: 3em;
+      .profile-img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+
+    &-info {
+      display: block;
+      width: 80%;
+      padding: 2em 0 0 0;
+      margin: 0 auto;
+      text-align: center;
+
+      .resume-download {
+        display: block;
+      }
+    }
+  }
+
+  #skills {
+    height: 110vh;
+    display: block;
+    .skillset {
+      &-main {
+        border-right: none;
+      }
+      &::after {
+        content: '';
+        display: block;
+        margin: 2em auto 2em auto;
+        //top: 20%;
+        background-color: lighten($dark-blue, 15);
+        height: 1px;
+        width: 50%;
+      }
+    }
+
+    .tools {
+      padding-top: 0;
+    }
+  }
+
+  .portfolio {
+    &-projects {
+      display: block;
+      padding: 2em 0 2em 0;
+      width: 55%;
+      &_item {
+        margin-bottom: 3em;
+      }
+    }
+  }
+  .contact {
+    height: 150vh;
+    &-infos {
+      display: block;
+      padding-top: 1em;
+      &_item {
+        display: block;
+        width: 50%;
+        margin: 0 auto 2em auto;
+      }
+    }
+  }
+}
+
+@include mediaMd {
+  .lg-heading {
+    font-size: 1.9rem;
+  }
+  .regular-text {
+    font-size: 1.1rem;
+  }
+  #menu {
+    a {
+      font-size: 0.85rem;
+    }
+  }
+
+  #home {
+    .header-info {
+      top: 24%;
+      &_content {
+        width: 70%;
+        h1 {
+          font-size: 3.2rem;
+        }
+        .lg-heading {
+          font-size: 1rem;
+        }
+      }
+      &_social {
+        margin-top: 1.3em;
+        width: 50%;
+      }
+    }
+  }
+
+  .about {
+    height: 120vh;
+  }
+
+  #skills {
+    .skillset-main,
+    .tools-main {
+      padding: 1em 2em 0 2em;
+    }
+  }
+
+  .portfolio {
+    &-projects {
+      width: 70%;
+    }
+  }
+  .contact {
+    &-infos {
+      &_item {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@include mediaSm {
+  #menu {
+    a {
+      font-size: 0.9rem;
+    }
+    &-ul {
+      width: 75%;
+    }
+  }
+
+  #home {
+    .header-info {
+      &_content {
+        width: 80%;
+        h1 {
+          font-size: 3rem;
+        }
+        .lg-heading {
+          font-size: 1.1rem;
+        }
+      }
+      &_social {
+        margin-top: 1.7em;
+        width: 65%;
+      }
+    }
+  }
+
+  #about {
+    .regular-text {
+      font-size: 0.9rem;
+    }
+  }
+
+  #skills {
+    height: 150vh;
+    .skillset-main,
+    .tools-main {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .portfolio {
+    &-projects {
+      width: 80%;
+    }
+  }
+
+  .contact {
+    &-infos_item {
+      p.regular-text {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@include mediaXs {
+  #menu {
+    a {
+      font-size: 0.8rem;
+    }
+    &-ul {
+      width: 85%;
+    }
+  }
+
+  #home {
+    background-position: 18%;
+    .header-info {
+      //top: 20%;
+      &_content {
+        width: 85%;
+        h1 {
+          font-size: 2.5rem;
+        }
+        .lg-heading {
+          font-size: 1rem;
+        }
+      }
+      &_social {
+        margin-top: 1em;
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        li {
+          margin-bottom: 0.5em;
+          flex-basis: 40%;
+        }
+      }
+    }
+  }
+
+  .about {
+    height: 135vh;
+    &-img {
+      .profile-img {
+        width: 170px;
+        height: 170px;
+      }
+    }
+  }
+
+  .portfolio {
+    .project-buttons {
+      flex-direction: column;
+      a {
+        width: 60%;
+        margin: 0 auto 1em auto;
+      }
+    }
+  }
+
+  .contact {
+    &-infos_item {
+      width: 85%;
+    }
+  }
+}
