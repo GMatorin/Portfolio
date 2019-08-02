@@ -1,3 +1,3 @@
 # Portfolio
 
-This is my portfolio project.
+This is my portfolio website.
