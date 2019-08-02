@@ -10,16 +10,22 @@ a {
     transition: all 0.3s ease-in; }
 
 /* Text configs */
+.lg-heading,
+.sm-heading {
+  color: #fff; }
+
 h1 {
   font-size: 5rem;
   margin: 0.5em; }
 
 .lg-heading {
   font-size: 2.2rem;
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5em;
+  line-height: 1.3; }
 
 .regular-text {
-  font-size: 1.1rem; }
+  font-size: 1.1rem;
+  color: #c8cbce; }
 
 .sm-heading {
   font-size: 1.5rem;
@@ -96,7 +102,8 @@ body {
       margin: 0 auto; }
     #home .header-info h3 {
       width: 85%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      font-size: 1.9rem; }
     #home .header-info_social {
       width: 30%;
       display: flex;
@@ -122,48 +129,40 @@ body {
   height: 85vh;
   display: flex;
   justify-content: space-around; }
-  #about .regular-text {
-    color: #c8cbce; }
-  #about .text-secondary {
-    color: #84b6d6; }
   #about .about-img {
     display: flex;
     flex: 2;
     justify-content: center;
     padding-top: 8em; }
     #about .about-img img {
-      border: #84b6d6 3px solid; }
+      border: #01baef 2px solid; }
   #about .about-info {
     flex: 3;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding-top: 5em;
     padding-right: 10em; }
     #about .about-info_content {
       margin: 0 auto; }
-    #about .about-info_details {
+    #about .about-info .resume-download {
       display: flex;
-      justify-content: space-between;
       padding-top: 1.5em; }
-      #about .about-info_details .address {
-        flex: 1; }
-      #about .about-info_details .resume-btn {
-        flex: 1;
+      #about .about-info .resume-download .resume-btn {
         display: block; }
-        #about .about-info_details .resume-btn_wrapper {
+        #about .about-info .resume-download .resume-btn_wrapper {
           display: inline-block;
           background: #3b4c4e;
           margin-top: 1em;
           padding: 0.5rem 0.6rem;
           border-radius: 5px; }
-          #about .about-info_details .resume-btn_wrapper:hover {
+          #about .about-info .resume-download .resume-btn_wrapper:hover {
             background: white;
             transition: all 0.3s ease-in; }
-            #about .about-info_details .resume-btn_wrapper:hover a {
+            #about .about-info .resume-download .resume-btn_wrapper:hover a {
               color: #000;
               transition: all 0.3s ease-in; }
-          #about .about-info_details .resume-btn_wrapper i {
+          #about .about-info .resume-download .resume-btn_wrapper i {
             margin-right: 0.5rem; }
   #about .profile-img {
     height: 250px;
@@ -178,8 +177,7 @@ body {
   justify-content: space-around; }
   .skills .skillset {
     flex: 1;
-    padding-top: 4em;
-    color: #0feaea; }
+    padding-top: 4em; }
     .skills .skillset-header {
       display: flex;
       justify-content: center; }
@@ -207,10 +205,12 @@ body {
           padding-bottom: 0.2em; }
     .skills .skillset-main {
       border-right: 1px solid #5d8dca; }
+    .skills .skillset,
+    .skills .skillset h2 {
+      color: #0feaea; }
   .skills .tools {
     flex: 1;
-    padding-top: 4em;
-    color: #0cc8fe; }
+    padding-top: 4em; }
     .skills .tools-header {
       display: flex;
       justify-content: center; }
@@ -236,6 +236,9 @@ body {
         align-items: center; }
         .skills .tools-main_item i {
           padding-bottom: 0.2em; }
+    .skills .tools,
+    .skills .tools h2 {
+      color: #0cc8fe; }
 
 .portfolio {
   background: #1b3453;
@@ -262,15 +265,13 @@ body {
           transition: all 0.3s ease-in; }
       .portfolio-projects_item .project-description {
         padding: 0.7em; }
-        .portfolio-projects_item .project-description h2 {
-          color: #fff; }
-          .portfolio-projects_item .project-description h2::after {
-            content: '';
-            display: block;
-            margin-top: 0.3em;
-            width: 100%;
-            background-color: #3c73b7;
-            height: 1px; }
+        .portfolio-projects_item .project-description h2::after {
+          content: '';
+          display: block;
+          margin-top: 0.3em;
+          width: 100%;
+          background-color: #3c73b7;
+          height: 1px; }
         .portfolio-projects_item .project-description .regular-text {
           padding-top: 0.3em; }
       .portfolio-projects_item .project-buttons {
@@ -298,8 +299,7 @@ body {
   height: 70vh; }
   .contact-header {
     text-align: center;
-    padding-top: 3em;
-    color: #fff; }
+    padding-top: 3em; }
   .contact-infos {
     display: flex;
     width: 85%;
@@ -324,8 +324,7 @@ body {
         .contact-infos_item .item-heading i {
           color: #01baef; }
         .contact-infos_item .item-heading h3 {
-          padding-top: 1em;
-          color: #fff; }
+          padding-top: 1em; }
           .contact-infos_item .item-heading h3::after {
             content: '';
             display: block;
