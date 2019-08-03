@@ -26,6 +26,9 @@ function debounce(func, wait = 20, immediate = true) {
 function navHandle(e) {
   /* 1. Change appearance of the nav menu according to its position */
   /* If the screem view is at the top of the page make navMenu appear without background */
+  /* index variable to find the active section of the web page */
+  let index = sections.length;
+
   if (window.scrollY === 0) {
     navMenu.classList.remove('nav-remove');
   } else if (window.scrollY >= 100) {
@@ -34,7 +37,7 @@ function navHandle(e) {
   }
   /* Make nav menu apear with black background if under home section */
 
-  if (window.scrollY >= 754) {
+  if (window.scrollY >= sections[1].offsetTop) {
     navMenu.classList.add('nav-background-main');
     navMenu.classList.remove('nav-remove');
   } else if (window.scrollY <= 754) {
@@ -43,8 +46,6 @@ function navHandle(e) {
   }
 
   /* 2. Change the current state in the nav menu for active section on the screen */
-  /* index variable to find the active section of the web page */
-  let index = sections.length;
   /* Count down the index variable till the active section is found */
   while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
   /* Remove current class from last nav link */

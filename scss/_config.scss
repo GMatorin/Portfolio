@@ -158,8 +158,14 @@ h1 {
 }
 
 // Media Query Mixins
+@mixin mediaXXs {
+  @media screen and (max-width: 340px) {
+    @content;
+  }
+}
+
 @mixin mediaXs {
-  @media screen and(max-width:400px) {
+  @media screen and (max-width: 380px) {
     @content;
   }
 }

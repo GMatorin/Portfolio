@@ -480,37 +480,51 @@ footer {
   .contact-infos_item p.regular-text {
     font-size: 1.1rem; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 380px) {
   #menu a {
     font-size: 0.8rem; }
   #menu-ul {
     width: 85%; }
   #home {
-    background-position: 18%; }
-    #home .header-info_content {
-      width: 85%; }
-      #home .header-info_content h1 {
-        font-size: 2.5rem; }
-      #home .header-info_content .lg-heading {
-        font-size: 1rem; }
-    #home .header-info_social {
-      margin-top: 1em;
-      width: 45%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around; }
-      #home .header-info_social li {
-        margin-bottom: 0.5em;
-        flex-basis: 40%; }
+    background-position: 13%; }
+    #home .header-info_content h1 {
+      font-size: 2.4rem; }
   .about {
-    height: 135vh; }
+    height: 125vh; } }
+
+@media screen and (max-width: 340px) {
+  #home {
+    background-position: 18%; }
+    #home .header-info {
+      top: 20%; }
+      #home .header-info_content {
+        width: 85%; }
+        #home .header-info_content h1 {
+          font-size: 2.5rem; }
+        #home .header-info_content .lg-heading {
+          font-size: 1rem; }
+      #home .header-info_social {
+        margin-top: 1em;
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; }
+        #home .header-info_social li {
+          margin-bottom: 0.5em;
+          flex-basis: 40%; }
+  .about {
+    height: 150vh; }
     .about-img .profile-img {
       width: 170px;
       height: 170px; }
+  #skills {
+    height: 170vh; }
   .portfolio .project-buttons {
     flex-direction: column; }
     .portfolio .project-buttons a {
       width: 60%;
       margin: 0 auto 1em auto; }
-  .contact-infos_item {
-    width: 85%; } }
+  .contact {
+    height: 165vh; }
+    .contact-infos_item {
+      width: 85%; } }

@@ -242,9 +242,26 @@
   }
 
   #home {
+    background-position: 13%;
+    .header-info {
+      &_content {
+        h1 {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+
+  .about {
+    height: 125vh;
+  }
+}
+
+@include mediaXXs {
+  #home {
     background-position: 18%;
     .header-info {
-      //top: 20%;
+      top: 20%;
       &_content {
         width: 85%;
         h1 {
@@ -269,13 +286,17 @@
   }
 
   .about {
-    height: 135vh;
+    height: 150vh;
     &-img {
       .profile-img {
         width: 170px;
         height: 170px;
       }
     }
+  }
+
+  #skills {
+    height: 170vh;
   }
 
   .portfolio {
@@ -289,6 +310,7 @@
   }
 
   .contact {
+    height: 165vh;
     &-infos_item {
       width: 85%;
     }
