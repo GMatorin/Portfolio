@@ -40,7 +40,7 @@ function navHandle(e) {
   if (window.scrollY >= sections[1].offsetTop) {
     navMenu.classList.add('nav-background-main');
     navMenu.classList.remove('nav-remove');
-  } else if (window.scrollY <= 754) {
+  } else if (window.scrollY <= sections[1].offsetTop) {
     /* Remove background otherwise */
     navMenu.classList.remove('nav-background-main');
   }
