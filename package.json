@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Sass project",
+  "description": "portfolio project",
   "main": "main.js",
   "homepage": "https://gmatorin.github.io/Portfolio",
   "scripts": {
