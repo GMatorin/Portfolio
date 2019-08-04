@@ -1,5 +1,5 @@
 {
-  "name": "sassandmore",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "Sass project",
   "main": "main.js",
@@ -17,5 +17,12 @@
   },
   "dependencies": {
     "gh-pages": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GMatorin/Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GMatorin/Portfolio/issues"
   }
 }
