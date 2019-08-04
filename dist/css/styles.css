@@ -204,6 +204,8 @@ body {
         align-items: center; }
         .skills .skillset-main_item i {
           padding-bottom: 0.2em; }
+        .skills .skillset-main_item h3 {
+          font-size: 1.2em; }
     .skills .skillset-main {
       border-right: 1px solid #5d8dca; }
     .skills .skillset,
@@ -237,6 +239,8 @@ body {
         align-items: center; }
         .skills .tools-main_item i {
           padding-bottom: 0.2em; }
+        .skills .tools-main_item h3 {
+          font-size: 1.2em; }
     .skills .tools,
     .skills .tools h2 {
       color: #0cc8fe; }
@@ -513,7 +517,7 @@ footer {
           margin-bottom: 0.5em;
           flex-basis: 40%; }
   .about {
-    height: 150vh; }
+    height: 160vh; }
     .about-img .profile-img {
       width: 170px;
       height: 170px; }
