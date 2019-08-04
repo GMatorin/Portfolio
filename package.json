@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "portfolio project",
+  "description": "portfolio website",
   "main": "main.js",
   "homepage": "https://gmatorin.github.io/Portfolio",
   "scripts": {
@@ -16,7 +16,7 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
-    "gh-pages": "^2.1.0"
+    "gh-pages": "^2.0.1"
   },
   "repository": {
     "type": "git",
