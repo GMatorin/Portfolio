@@ -73,6 +73,11 @@ $background-opacity: 0.9;
 @mixin skills {
   flex: 1;
   padding-top: 4em;
+  &,
+  h2 {
+    //color: $dark-gray;
+    color: lighten($light-gray, 5);
+  }
   &-header {
     display: flex;
     justify-content: center;

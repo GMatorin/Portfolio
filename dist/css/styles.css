@@ -121,7 +121,7 @@ body {
       justify-content: space-between;
       z-index: 2; }
       #home .header-info_social a:hover {
-        color: #3a6eb0; }
+        color: #017fa3; }
   #home .btn-down {
     position: absolute;
     top: 90%;
@@ -134,24 +134,24 @@ body {
 
 .about {
   background: #253031;
-  height: 75vh;
-  min-height: 560px;
+  height: 70vh;
+  min-height: 500px;
   display: flex;
   justify-content: space-around; }
   .about-img {
     display: flex;
     flex: 2;
     justify-content: center;
-    padding-top: 8em; }
+    align-items: center; }
     .about-img img {
-      border: #01baef 2px solid; }
+      border: #305b91 2px solid; }
   .about-info {
     flex: 3;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-top: 5em;
-    padding-right: 10em; }
+    padding-right: 7em;
+    align-items: center;
+    justify-content: center; }
     .about-info_content {
       margin: 0 auto; }
     .about-info .resume-download {
@@ -163,16 +163,22 @@ body {
           display: inline-block;
           background: #3b4c4e;
           margin-top: 1em;
-          padding: 0.5rem 0.6rem;
-          border-radius: 5px; }
-          .about-info .resume-download .resume-btn_wrapper:hover {
-            background: white;
-            transition: all 0.3s ease-in; }
-            .about-info .resume-download .resume-btn_wrapper:hover a {
-              color: #000;
-              transition: all 0.3s ease-in; }
+          border-radius: 5px;
+          width: 200px;
+          height: 50px; }
           .about-info .resume-download .resume-btn_wrapper i {
             margin-right: 0.5rem; }
+          .about-info .resume-download .resume-btn_wrapper a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            padding: 0.5rem 0.4rem 0.5rem 0.8rem; }
+          .about-info .resume-download .resume-btn_wrapper:hover {
+            background: #465b5d;
+            transition: all 0.3s ease-in; }
+            .about-info .resume-download .resume-btn_wrapper:hover a {
+              color: #fff;
+              transition: all 0.3s ease-in; }
   .about .profile-img {
     height: 250px;
     width: 250px;
@@ -188,6 +194,9 @@ body {
   .skills .skillset {
     flex: 1;
     padding-top: 4em; }
+    .skills .skillset,
+    .skills .skillset h2 {
+      color: #d5d8da; }
     .skills .skillset-header {
       display: flex;
       justify-content: center; }
@@ -217,12 +226,12 @@ body {
           font-size: 1.2em; }
     .skills .skillset-main {
       border-right: 1px solid #5d8dca; }
-    .skills .skillset,
-    .skills .skillset h2 {
-      color: #0feaea; }
   .skills .tools {
     flex: 1;
     padding-top: 4em; }
+    .skills .tools,
+    .skills .tools h2 {
+      color: #d5d8da; }
     .skills .tools-header {
       display: flex;
       justify-content: center; }
@@ -250,9 +259,6 @@ body {
           padding-bottom: 0.2em; }
         .skills .tools-main_item h3 {
           font-size: 1.2em; }
-    .skills .tools,
-    .skills .tools h2 {
-      color: #0cc8fe; }
 
 .portfolio {
   background: #1b3453;
