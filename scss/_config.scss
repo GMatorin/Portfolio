@@ -52,7 +52,6 @@ $background-opacity: 0.9;
 @mixin background {
   background: $home-image;
   background-size: cover;
-
   &:after {
     content: '';
     position: absolute;
@@ -159,6 +158,14 @@ h1 {
 .nav-remove {
   @include easeIn();
   opacity: 0;
+}
+
+#home,
+#about,
+#skills,
+#portfolio,
+#contact {
+  overflow: hidden;
 }
 
 // Media Query Mixins

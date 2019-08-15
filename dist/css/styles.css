@@ -43,6 +43,13 @@ h1 {
   transition: all 0.3s ease-in;
   opacity: 0; }
 
+#home,
+#about,
+#skills,
+#portfolio,
+#contact {
+  overflow: hidden; }
+
 html {
   scroll-behavior: smooth; }
 
@@ -128,6 +135,7 @@ body {
 .about {
   background: #253031;
   height: 75vh;
+  min-height: 560px;
   display: flex;
   justify-content: space-around; }
   .about-img {
@@ -173,6 +181,7 @@ body {
 
 .skills {
   height: 65vh;
+  min-height: 470px;
   background: #162b44;
   display: flex;
   justify-content: space-around; }
@@ -263,10 +272,10 @@ body {
       background: #24456e; }
       .portfolio-projects_item img {
         width: 100%;
-        filter: brightness(80%);
+        filter: brightness(90%);
         z-index: 15; }
         .portfolio-projects_item img:hover {
-          filter: brightness(55%);
+          filter: brightness(75%);
           transition: all 0.3s ease-in; }
       .portfolio-projects_item .project-description {
         padding: 0.7em; }
@@ -301,7 +310,8 @@ body {
 .contact {
   background: #253031;
   color: #c8cbce;
-  height: 70vh; }
+  height: 70vh;
+  min-height: 500px; }
   .contact-header {
     text-align: center;
     padding-top: 3em; }

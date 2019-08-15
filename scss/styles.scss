@@ -95,6 +95,7 @@ body {
 .about {
   background: $dark-gray;
   height: 75vh;
+  min-height: 560px;
   display: flex;
   justify-content: space-around;
 
@@ -157,6 +158,7 @@ body {
 
 .skills {
   height: 65vh;
+  min-height: 470px;
   background: darken($dark-blue, 25);
   display: flex;
   justify-content: space-around;
@@ -201,10 +203,10 @@ body {
       background: darken($dark-blue, 14);
       img {
         width: 100%;
-        filter: brightness(80%);
+        filter: brightness(90%);
         z-index: 15;
         &:hover {
-          filter: brightness(55%);
+          filter: brightness(75%);
           @include easeIn;
         }
       }
@@ -256,6 +258,7 @@ body {
   background: $dark-gray;
   color: $light-gray;
   height: 70vh;
+  min-height: 500px;
 
   &-header {
     text-align: center;
