@@ -114,7 +114,7 @@ body {
       justify-content: space-between;
       z-index: 2; }
       #home .header-info_social a:hover {
-        color: #3a6eb0; }
+        color: #017fa3; }
   #home .btn-down {
     position: absolute;
     top: 90%;
@@ -126,24 +126,25 @@ body {
       transition: all 0.5s ease-out; }
 
 .about {
+  position: relative;
   background: #253031;
-  height: 75vh;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding: 5em 0; }
   .about-img {
     display: flex;
     flex: 2;
     justify-content: center;
-    padding-top: 8em; }
+    align-items: center; }
     .about-img img {
-      border: #01baef 2px solid; }
+      border: #305b91 2px solid; }
   .about-info {
     flex: 3;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-top: 5em;
-    padding-right: 10em; }
+    padding-right: 7em;
+    align-items: center;
+    justify-content: center; }
     .about-info_content {
       margin: 0 auto; }
     .about-info .resume-download {
@@ -155,16 +156,22 @@ body {
           display: inline-block;
           background: #3b4c4e;
           margin-top: 1em;
-          padding: 0.5rem 0.6rem;
-          border-radius: 5px; }
-          .about-info .resume-download .resume-btn_wrapper:hover {
-            background: white;
-            transition: all 0.3s ease-in; }
-            .about-info .resume-download .resume-btn_wrapper:hover a {
-              color: #000;
-              transition: all 0.3s ease-in; }
+          border-radius: 5px;
+          width: 200px;
+          height: 50px; }
           .about-info .resume-download .resume-btn_wrapper i {
             margin-right: 0.5rem; }
+          .about-info .resume-download .resume-btn_wrapper a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            padding: 0.5rem 0.4rem 0.5rem 0.8rem; }
+          .about-info .resume-download .resume-btn_wrapper:hover {
+            background: #465b5d;
+            transition: all 0.3s ease-in; }
+            .about-info .resume-download .resume-btn_wrapper:hover a {
+              color: #fff;
+              transition: all 0.3s ease-in; }
   .about .profile-img {
     height: 250px;
     width: 250px;
@@ -172,13 +179,16 @@ body {
     border-radius: 50%; }
 
 .skills {
-  height: 65vh;
-  background: #162b44;
+  background: #23436a;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  position: relative; }
   .skills .skillset {
     flex: 1;
-    padding-top: 4em; }
+    padding: 4em 0; }
+    .skills .skillset,
+    .skills .skillset h2 {
+      color: #d5d8da; }
     .skills .skillset-header {
       display: flex;
       justify-content: center; }
@@ -208,12 +218,12 @@ body {
           font-size: 1.2em; }
     .skills .skillset-main {
       border-right: 1px solid #5d8dca; }
-    .skills .skillset,
-    .skills .skillset h2 {
-      color: #0feaea; }
   .skills .tools {
     flex: 1;
-    padding-top: 4em; }
+    padding: 4em 0; }
+    .skills .tools,
+    .skills .tools h2 {
+      color: #d5d8da; }
     .skills .tools-header {
       display: flex;
       justify-content: center; }
@@ -241,17 +251,16 @@ body {
           padding-bottom: 0.2em; }
         .skills .tools-main_item h3 {
           font-size: 1.2em; }
-    .skills .tools,
-    .skills .tools h2 {
-      color: #0cc8fe; }
 
 .portfolio {
+  z-index: 4;
   background: #1b3453;
   color: #c8cbce;
-  padding-top: 3em;
+  padding: 4em 0;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .portfolio-head {
     text-align: center; }
   .portfolio-projects {
@@ -263,10 +272,10 @@ body {
       background: #24456e; }
       .portfolio-projects_item img {
         width: 100%;
-        filter: brightness(80%);
+        filter: brightness(90%);
         z-index: 15; }
         .portfolio-projects_item img:hover {
-          filter: brightness(55%);
+          filter: brightness(75%);
           transition: all 0.3s ease-in; }
       .portfolio-projects_item .project-description {
         padding: 0.7em; }
@@ -285,15 +294,13 @@ body {
         padding: 1em 0 2em 0; }
         .portfolio-projects_item .project-buttons a {
           flex-basis: 42%;
-          background: #adb2b6;
-          border: #253031 1px solid;
-          color: #000;
+          background: #1f3a5d;
+          color: #c8cbce;
+          border: #777f86 1px solid;
           border-radius: 5px; }
           .portfolio-projects_item .project-buttons a:hover {
             transition: all 0.3s ease-in;
-            background: #303e40;
-            border: #505393 1px solid;
-            color: #fff; }
+            background: #152840; }
           .portfolio-projects_item .project-buttons a i {
             display: inline-block;
             padding: 0 0.5em 0 0.5em; }
@@ -301,15 +308,14 @@ body {
 .contact {
   background: #253031;
   color: #c8cbce;
-  height: 70vh; }
+  padding: 4em 0 5.5em 0; }
   .contact-header {
-    text-align: center;
-    padding-top: 3em; }
+    text-align: center; }
   .contact-infos {
     display: flex;
     width: 85%;
     margin: 0 auto;
-    padding-top: 3em;
+    padding-top: 1.5em;
     justify-content: space-between; }
     .contact-infos_item {
       background: #303e40;
@@ -358,13 +364,15 @@ footer {
     footer .icons a {
       margin: 0 1em 0 1em; }
 
-@media screen and (min-width: 1023px) and (max-width: 1200px) {
+@media screen and (min-width: 1070px) and (max-width: 1200px) {
+  #menu-ul {
+    width: 45%; }
   #home .header-info {
     top: 17%; }
     #home .header-info_social {
       margin-top: 1.5em; } }
 
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 1069px) {
   html,
   body {
     width: 100%;
@@ -385,13 +393,11 @@ footer {
       margin-top: 1.3em; }
   .about {
     flex-direction: column;
-    height: 105vh;
-    display: block; }
-    .about-img {
-      padding-top: 3em; }
-      .about-img .profile-img {
-        width: 200px;
-        height: 200px; }
+    display: block;
+    padding: 3em 0; }
+    .about-img .profile-img {
+      width: 200px;
+      height: 200px; }
     .about-info {
       display: block;
       width: 80%;
@@ -401,7 +407,6 @@ footer {
       .about-info .resume-download {
         display: block; }
   #skills {
-    height: 110vh;
     display: block; }
     #skills .skillset-main {
       border-right: none; }
@@ -414,14 +419,16 @@ footer {
       width: 50%; }
     #skills .tools {
       padding-top: 0; }
-  .portfolio-projects {
-    display: block;
-    padding: 2em 0 2em 0;
-    width: 55%; }
-    .portfolio-projects_item {
-      margin-bottom: 3em; }
+  .portfolio {
+    padding: 3em 0; }
+    .portfolio-projects {
+      display: block;
+      padding: 2em 0 2em 0;
+      width: 55%; }
+      .portfolio-projects_item {
+        margin-bottom: 3em; }
   .contact {
-    height: 150vh; }
+    padding: 3em 0; }
     .contact-infos {
       display: block;
       padding-top: 1em; }
@@ -437,6 +444,8 @@ footer {
     font-size: 1.1rem; }
   #menu a {
     font-size: 0.85rem; }
+  #menu-ul {
+    width: 60%; }
   #home .header-info {
     top: 24%; }
     #home .header-info_content {
@@ -448,8 +457,6 @@ footer {
     #home .header-info_social {
       margin-top: 1.3em;
       width: 50%; }
-  .about {
-    height: 120vh; }
   #skills .skillset-main,
   #skills .tools-main {
     padding: 1em 2em 0 2em; }
@@ -466,7 +473,7 @@ footer {
   #home .header-info_content {
     width: 80%; }
     #home .header-info_content h1 {
-      font-size: 3rem; }
+      font-size: 2.5rem; }
     #home .header-info_content .lg-heading {
       font-size: 1.1rem; }
   #home .header-info_social {
@@ -474,15 +481,17 @@ footer {
     width: 65%; }
   #about .regular-text {
     font-size: 0.9rem; }
-  #skills {
-    height: 150vh; }
-    #skills .skillset-main,
-    #skills .tools-main {
-      grid-template-columns: repeat(2, 1fr); }
+  #skills .skillset-main,
+  #skills .tools-main {
+    grid-template-columns: repeat(2, 1fr); }
+  .portfolio .sm-heading {
+    font-size: 1.15em; }
   .portfolio-projects {
     width: 80%; }
-  .contact-infos_item p.regular-text {
-    font-size: 1.1rem; } }
+  .contact-infos_item {
+    width: 90%; }
+    .contact-infos_item p.regular-text {
+      font-size: 1.1rem; } }
 
 @media screen and (max-width: 380px) {
   #menu a {
@@ -492,9 +501,7 @@ footer {
   #home {
     background-position: 13%; }
     #home .header-info_content h1 {
-      font-size: 2.4rem; }
-  .about {
-    height: 125vh; } }
+      font-size: 2.4rem; } }
 
 @media screen and (max-width: 340px) {
   #home {
@@ -516,19 +523,13 @@ footer {
         #home .header-info_social li {
           margin-bottom: 0.5em;
           flex-basis: 40%; }
-  .about {
-    height: 160vh; }
-    .about-img .profile-img {
-      width: 170px;
-      height: 170px; }
-  #skills {
-    height: 170vh; }
+  .about-img .profile-img {
+    width: 170px;
+    height: 170px; }
   .portfolio .project-buttons {
     flex-direction: column; }
     .portfolio .project-buttons a {
       width: 60%;
       margin: 0 auto 1em auto; }
-  .contact {
-    height: 165vh; }
-    .contact-infos_item {
-      width: 85%; } }
+  .contact-infos_item {
+    width: 85%; } }
