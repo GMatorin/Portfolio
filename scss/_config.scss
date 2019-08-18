@@ -200,13 +200,13 @@ h1 {
 }
 
 @mixin mediaLg {
-  @media screen and (max-width: 1022px) {
+  @media screen and (max-width: 1069px) {
     @content;
   }
 }
 
 @mixin mediaXl {
-  @media screen and (min-width: 1023px) and (max-width: 1200px) {
+  @media screen and (min-width: 1070px) and (max-width: 1200px) {
     @content;
   }
 }

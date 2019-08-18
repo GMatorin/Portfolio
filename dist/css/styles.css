@@ -364,13 +364,15 @@ footer {
     footer .icons a {
       margin: 0 1em 0 1em; }
 
-@media screen and (min-width: 1023px) and (max-width: 1200px) {
+@media screen and (min-width: 1070px) and (max-width: 1200px) {
+  #menu-ul {
+    width: 45%; }
   #home .header-info {
     top: 17%; }
     #home .header-info_social {
       margin-top: 1.5em; } }
 
-@media screen and (max-width: 1022px) {
+@media screen and (max-width: 1069px) {
   html,
   body {
     width: 100%;
@@ -391,12 +393,11 @@ footer {
       margin-top: 1.3em; }
   .about {
     flex-direction: column;
-    display: block; }
-    .about-img {
-      padding-top: 3em; }
-      .about-img .profile-img {
-        width: 200px;
-        height: 200px; }
+    display: block;
+    padding: 3em 0; }
+    .about-img .profile-img {
+      width: 200px;
+      height: 200px; }
     .about-info {
       display: block;
       width: 80%;
@@ -418,19 +419,23 @@ footer {
       width: 50%; }
     #skills .tools {
       padding-top: 0; }
-  .portfolio-projects {
-    display: block;
-    padding: 2em 0 2em 0;
-    width: 55%; }
-    .portfolio-projects_item {
-      margin-bottom: 3em; }
-  .contact-infos {
-    display: block;
-    padding-top: 1em; }
-    .contact-infos_item {
+  .portfolio {
+    padding: 3em 0; }
+    .portfolio-projects {
       display: block;
-      width: 50%;
-      margin: 0 auto 2em auto; } }
+      padding: 2em 0 2em 0;
+      width: 55%; }
+      .portfolio-projects_item {
+        margin-bottom: 3em; }
+  .contact {
+    padding: 3em 0; }
+    .contact-infos {
+      display: block;
+      padding-top: 1em; }
+      .contact-infos_item {
+        display: block;
+        width: 50%;
+        margin: 0 auto 2em auto; } }
 
 @media screen and (max-width: 767px) {
   .lg-heading {
@@ -439,6 +444,8 @@ footer {
     font-size: 1.1rem; }
   #menu a {
     font-size: 0.85rem; }
+  #menu-ul {
+    width: 60%; }
   #home .header-info {
     top: 24%; }
     #home .header-info_content {
@@ -466,7 +473,7 @@ footer {
   #home .header-info_content {
     width: 80%; }
     #home .header-info_content h1 {
-      font-size: 3rem; }
+      font-size: 2.5rem; }
     #home .header-info_content .lg-heading {
       font-size: 1.1rem; }
   #home .header-info_social {
@@ -477,10 +484,14 @@ footer {
   #skills .skillset-main,
   #skills .tools-main {
     grid-template-columns: repeat(2, 1fr); }
+  .portfolio .sm-heading {
+    font-size: 1.15em; }
   .portfolio-projects {
     width: 80%; }
-  .contact-infos_item p.regular-text {
-    font-size: 1.1rem; } }
+  .contact-infos_item {
+    width: 90%; }
+    .contact-infos_item p.regular-text {
+      font-size: 1.1rem; } }
 
 @media screen and (max-width: 380px) {
   #menu a {

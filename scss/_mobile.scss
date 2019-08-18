@@ -1,4 +1,9 @@
 @include mediaXl {
+  #menu {
+    &-ul {
+      width: 45%;
+    }
+  }
   #home {
     .header-info {
       top: 17%;
@@ -48,9 +53,8 @@
     flex-direction: column;
     //height: 105vh;
     display: block;
-
+    padding: 3em 0;
     &-img {
-      padding-top: 3em;
       .profile-img {
         width: 200px;
         height: 200px;
@@ -94,6 +98,7 @@
   }
 
   .portfolio {
+    padding: 3em 0;
     &-projects {
       display: block;
       padding: 2em 0 2em 0;
@@ -104,7 +109,7 @@
     }
   }
   .contact {
-    //height: 150vh;
+    padding: 3em 0;
     &-infos {
       display: block;
       padding-top: 1em;
@@ -127,6 +132,9 @@
   #menu {
     a {
       font-size: 0.85rem;
+    }
+    &-ul {
+      width: 60%;
     }
   }
 
@@ -189,7 +197,7 @@
       &_content {
         width: 80%;
         h1 {
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
         .lg-heading {
           font-size: 1.1rem;
@@ -217,6 +225,9 @@
   }
 
   .portfolio {
+    .sm-heading {
+      font-size: 1.15em;
+    }
     &-projects {
       width: 80%;
     }
@@ -224,6 +235,7 @@
 
   .contact {
     &-infos_item {
+      width: 90%;
       p.regular-text {
         font-size: 1.1rem;
       }
@@ -250,10 +262,6 @@
         }
       }
     }
-  }
-
-  .about {
-    // height: 125vh;
   }
 }
 
