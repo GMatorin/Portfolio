@@ -43,13 +43,6 @@ h1 {
   transition: all 0.3s ease-in;
   opacity: 0; }
 
-#home,
-#about,
-#skills,
-#portfolio,
-#contact {
-  overflow: hidden; }
-
 html {
   scroll-behavior: smooth; }
 
@@ -133,11 +126,11 @@ body {
       transition: all 0.5s ease-out; }
 
 .about {
+  position: relative;
   background: #253031;
-  height: 70vh;
-  min-height: 500px;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding: 5em 0; }
   .about-img {
     display: flex;
     flex: 2;
@@ -186,14 +179,13 @@ body {
     border-radius: 50%; }
 
 .skills {
-  height: 65vh;
-  min-height: 470px;
-  background: #162b44;
+  background: #23436a;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  position: relative; }
   .skills .skillset {
     flex: 1;
-    padding-top: 4em; }
+    padding: 4em 0; }
     .skills .skillset,
     .skills .skillset h2 {
       color: #d5d8da; }
@@ -228,7 +220,7 @@ body {
       border-right: 1px solid #5d8dca; }
   .skills .tools {
     flex: 1;
-    padding-top: 4em; }
+    padding: 4em 0; }
     .skills .tools,
     .skills .tools h2 {
       color: #d5d8da; }
@@ -261,12 +253,14 @@ body {
           font-size: 1.2em; }
 
 .portfolio {
+  z-index: 4;
   background: #1b3453;
   color: #c8cbce;
-  padding-top: 3em;
+  padding: 4em 0;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   .portfolio-head {
     text-align: center; }
   .portfolio-projects {
@@ -300,15 +294,13 @@ body {
         padding: 1em 0 2em 0; }
         .portfolio-projects_item .project-buttons a {
           flex-basis: 42%;
-          background: #adb2b6;
-          border: #253031 1px solid;
-          color: #000;
+          background: #1f3a5d;
+          color: #c8cbce;
+          border: #777f86 1px solid;
           border-radius: 5px; }
           .portfolio-projects_item .project-buttons a:hover {
             transition: all 0.3s ease-in;
-            background: #303e40;
-            border: #505393 1px solid;
-            color: #fff; }
+            background: #152840; }
           .portfolio-projects_item .project-buttons a i {
             display: inline-block;
             padding: 0 0.5em 0 0.5em; }
@@ -316,16 +308,14 @@ body {
 .contact {
   background: #253031;
   color: #c8cbce;
-  height: 70vh;
-  min-height: 500px; }
+  padding: 4em 0 5.5em 0; }
   .contact-header {
-    text-align: center;
-    padding-top: 3em; }
+    text-align: center; }
   .contact-infos {
     display: flex;
     width: 85%;
     margin: 0 auto;
-    padding-top: 3em;
+    padding-top: 1.5em;
     justify-content: space-between; }
     .contact-infos_item {
       background: #303e40;
@@ -401,7 +391,6 @@ footer {
       margin-top: 1.3em; }
   .about {
     flex-direction: column;
-    height: 105vh;
     display: block; }
     .about-img {
       padding-top: 3em; }
@@ -417,7 +406,6 @@ footer {
       .about-info .resume-download {
         display: block; }
   #skills {
-    height: 110vh;
     display: block; }
     #skills .skillset-main {
       border-right: none; }
@@ -436,15 +424,13 @@ footer {
     width: 55%; }
     .portfolio-projects_item {
       margin-bottom: 3em; }
-  .contact {
-    height: 150vh; }
-    .contact-infos {
+  .contact-infos {
+    display: block;
+    padding-top: 1em; }
+    .contact-infos_item {
       display: block;
-      padding-top: 1em; }
-      .contact-infos_item {
-        display: block;
-        width: 50%;
-        margin: 0 auto 2em auto; } }
+      width: 50%;
+      margin: 0 auto 2em auto; } }
 
 @media screen and (max-width: 767px) {
   .lg-heading {
@@ -464,8 +450,6 @@ footer {
     #home .header-info_social {
       margin-top: 1.3em;
       width: 50%; }
-  .about {
-    height: 120vh; }
   #skills .skillset-main,
   #skills .tools-main {
     padding: 1em 2em 0 2em; }
@@ -490,11 +474,9 @@ footer {
     width: 65%; }
   #about .regular-text {
     font-size: 0.9rem; }
-  #skills {
-    height: 150vh; }
-    #skills .skillset-main,
-    #skills .tools-main {
-      grid-template-columns: repeat(2, 1fr); }
+  #skills .skillset-main,
+  #skills .tools-main {
+    grid-template-columns: repeat(2, 1fr); }
   .portfolio-projects {
     width: 80%; }
   .contact-infos_item p.regular-text {
@@ -508,9 +490,7 @@ footer {
   #home {
     background-position: 13%; }
     #home .header-info_content h1 {
-      font-size: 2.4rem; }
-  .about {
-    height: 125vh; } }
+      font-size: 2.4rem; } }
 
 @media screen and (max-width: 340px) {
   #home {
@@ -532,19 +512,13 @@ footer {
         #home .header-info_social li {
           margin-bottom: 0.5em;
           flex-basis: 40%; }
-  .about {
-    height: 160vh; }
-    .about-img .profile-img {
-      width: 170px;
-      height: 170px; }
-  #skills {
-    height: 170vh; }
+  .about-img .profile-img {
+    width: 170px;
+    height: 170px; }
   .portfolio .project-buttons {
     flex-direction: column; }
     .portfolio .project-buttons a {
       width: 60%;
       margin: 0 auto 1em auto; }
-  .contact {
-    height: 165vh; }
-    .contact-infos_item {
-      width: 85%; } }
+  .contact-infos_item {
+    width: 85%; } }

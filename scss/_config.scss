@@ -72,10 +72,11 @@ $background-opacity: 0.9;
 
 @mixin skills {
   flex: 1;
-  padding-top: 4em;
+  padding: 4em 0;
   &,
   h2 {
     //color: $dark-gray;
+    //color: #0e79b2;
     color: lighten($light-gray, 5);
   }
   &-header {
@@ -170,7 +171,7 @@ h1 {
 #skills,
 #portfolio,
 #contact {
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 // Media Query Mixins

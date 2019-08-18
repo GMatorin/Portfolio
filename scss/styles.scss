@@ -93,11 +93,14 @@ body {
 }
 
 .about {
+  //height: 70vh;
+  //min-height: 500px;
+  position: relative;
   background: $dark-gray;
-  height: 70vh;
-  min-height: 500px;
   display: flex;
   justify-content: space-around;
+  //padding-bottom: 10vh;
+  padding: 5em 0;
 
   &-img {
     display: flex;
@@ -107,6 +110,7 @@ body {
 
     img {
       border: darken($dark-blue, 5) 2px solid;
+      // border: darken($tiffany-blue, 5) 2px solid;
     }
   }
 
@@ -114,8 +118,6 @@ body {
     flex: 3;
     display: flex;
     flex-direction: column;
-    //justify-content: space-between;
-    //padding-top: 5em;
     padding-right: 7em;
     align-items: center;
     justify-content: center;
@@ -165,12 +167,11 @@ body {
 }
 
 .skills {
-  height: 65vh;
-  min-height: 470px;
-  background: darken($dark-blue, 25);
+  background: darken($dark-blue, 15);
   //background: darken($light-gray, 10);
   display: flex;
   justify-content: space-around;
+  position: relative;
 
   .skillset {
     @include skills();
@@ -193,12 +194,15 @@ body {
 }
 
 .portfolio {
+  z-index: 4;
   background: darken($dark-blue, 21);
+  //background: lighten($gray, 15);
   color: $light-gray;
-  padding-top: 3em;
+  padding: 4em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
   &-head {
     text-align: center;
@@ -243,15 +247,15 @@ body {
         padding: 1em 0 2em 0;
         a {
           flex-basis: 42%;
-          background: darken($light-gray, 10);
-          border: $dark-gray 1px solid;
-          color: #000;
+          //background: darken($light-gray, 17);
+          //color: #000;
+          background: darken($dark-blue, 18.5);
+          color: $light-gray;
+          border: darken($light-gray, 30) 1px solid;
           border-radius: 5px;
           &:hover {
             @include easeIn();
-            background: lighten($dark-gray, 5);
-            border: $purple 1px solid;
-            color: #fff;
+            background: darken($dark-blue, 26);
           }
 
           i {
@@ -267,19 +271,17 @@ body {
 .contact {
   background: $dark-gray;
   color: $light-gray;
-  height: 70vh;
-  min-height: 500px;
+  padding: 4em 0 5.5em 0;
 
   &-header {
     text-align: center;
-    padding-top: 3em;
   }
 
   &-infos {
     display: flex;
     width: 85%;
     margin: 0 auto;
-    padding-top: 3em;
+    padding-top: 1.5em;
     justify-content: space-between;
     &_item {
       background: lighten($dark-gray, 5);
