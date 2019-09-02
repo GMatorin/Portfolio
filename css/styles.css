@@ -129,22 +129,22 @@ body {
   position: relative;
   background: #253031;
   display: flex;
-  justify-content: space-around;
-  padding: 5em 0; }
+  justify-content: space-evenly;
+  padding: 9em 0; }
   .about-img {
     display: flex;
-    flex: 2;
+    flex-basis: 20%;
     justify-content: center;
     align-items: center; }
     .about-img img {
       border: #305b91 2px solid; }
   .about-info {
-    flex: 3;
+    flex-basis: 55%;
     display: flex;
     flex-direction: column;
-    padding-right: 7em;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    padding-right: 7em; }
     .about-info_content {
       margin: 0 auto; }
     .about-info .resume-download {
@@ -308,9 +308,10 @@ body {
 .contact {
   background: #253031;
   color: #c8cbce;
-  padding: 4em 0 5.5em 0; }
+  padding: 4em 0 8em 0; }
   .contact-header {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 2em; }
   .contact-infos {
     display: flex;
     width: 85%;
