@@ -297,13 +297,13 @@ body {
           background: #1f3a5d;
           color: #c8cbce;
           border: #777f86 1px solid;
-          border-radius: 5px; }
+          border-radius: 5px;
+          text-align: center; }
           .portfolio-projects_item .project-buttons a:hover {
             transition: all 0.3s ease-in;
             background: #152840; }
           .portfolio-projects_item .project-buttons a i {
-            display: inline-block;
-            padding: 0 0.5em 0 0.5em; }
+            display: inline-block; }
 
 .contact {
   background: #253031;
