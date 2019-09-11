@@ -93,18 +93,15 @@ body {
 }
 
 .about {
-  //height: 70vh;
-  //min-height: 500px;
   position: relative;
   background: $dark-gray;
   display: flex;
-  justify-content: space-around;
-  //padding-bottom: 10vh;
-  padding: 5em 0;
+  justify-content: space-evenly;
+  padding: 9em 0;
 
   &-img {
     display: flex;
-    flex: 2;
+    flex-basis: 20%;
     justify-content: center;
     align-items: center;
 
@@ -115,12 +112,12 @@ body {
   }
 
   &-info {
-    flex: 3;
+    flex-basis: 55%;
     display: flex;
     flex-direction: column;
-    padding-right: 7em;
     align-items: center;
     justify-content: center;
+    padding-right: 7em;
     &_content {
       margin: 0 auto;
     }
@@ -253,6 +250,7 @@ body {
           color: $light-gray;
           border: darken($light-gray, 30) 1px solid;
           border-radius: 5px;
+          text-align: center;
           &:hover {
             @include easeIn();
             background: darken($dark-blue, 26);
@@ -260,7 +258,7 @@ body {
 
           i {
             display: inline-block;
-            padding: 0 0.5em 0 0.5em;
+            // padding: 0 0.5em 0 0.5em;
           }
         }
       }
@@ -271,10 +269,11 @@ body {
 .contact {
   background: $dark-gray;
   color: $light-gray;
-  padding: 4em 0 5.5em 0;
+  padding: 4em 0 8em 0;
 
   &-header {
     text-align: center;
+    padding-bottom: 2em;
   }
 
   &-infos {
