@@ -132,8 +132,9 @@ a {
   //color: $light-yellow;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 0.5em;
+  line-height: 4.5rem;
 }
 .lg-heading {
   font-size: 2.2rem;
@@ -199,6 +200,12 @@ h1 {
   }
 }
 
+@mixin mediaLMd {
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}
+
 @mixin mediaLg {
   @media screen and (max-width: 1069px) {
     @content;
@@ -207,6 +214,12 @@ h1 {
 
 @mixin mediaXl {
   @media screen and (min-width: 1070px) and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mediaXXl {
+  @media screen and (max-width: 1450px) {
     @content;
   }
 }

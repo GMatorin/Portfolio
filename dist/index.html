@@ -10,34 +10,34 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>My Portfolio</title>
+    <title>Глеб Маторин</title>
   </head>
   <body>
     <nav id="menu">
       <ul id="menu-ul">
         <li class="menu-ul_item current">
-          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#home">На верх</a>
         </li>
         <li class="menu-ul_item">
-          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#about">Обо мне</a>
         </li>
         <li class="menu-ul_item">
-          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#skills">Навыки</a>
         </li>
         <li class="menu-ul_item">
-          <a class="nav-link" href="#portfolio">Portfolio</a>
+          <a class="nav-link" href="#portfolio">Портфолио</a>
         </li>
         <li class="menu-ul_item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="#contact">Контакты</a>
         </li>
       </ul>
     </nav>
     <header id="home" class="pageSection">
       <div class="header-info">
         <div class="header-info_content">
-          <h1>Hi, I'm <span class="text-secondary">Gleb!</span></h1>
+          <h1>Привет, меня зовут Глеб!</h1>
           <h3 class="lg-heading">
-            I'm a software developer from NYC, specializing in front end.
+            Я Frontend-разработчик из Новосибирска.
           </h3>
           <ul class="header-info_social">
             <li>
@@ -46,8 +46,8 @@
               ></a>
             </li>
             <li>
-              <a href="#" target="_blank"
-                ><i class="fab fa-linkedin fa-2x"></i
+              <a href="https://vk.com/g14662799" target="_blank"
+                ><i class="fab fa-vk fa-2x"></i
               ></a>
             </li>
             <li>
@@ -79,26 +79,29 @@
       </div>
       <div class="about-info">
         <div class="about-info_content">
-          <h2 class="lg-heading">About Me</h2>
+          <h2 class="lg-heading">Обо мне</h2>
 
           <p class="regular-text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            illum sequi hic accusantium exercitationem perspiciatis nulla
-            quaerat officia veritatis, ut animi cum expedita voluptates
-            aspernatur laborum ducimus porro molestias eaque quisquam rem! Ipsa
-            voluptate temporibus commodi odio eveniet facilis praesentium
-            debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatum, iste.
+            Я начинающий Frontend-разработчик и недавно закончил своё высшее
+            образование в Германии. Во время учёбы я работал программистом на
+            различных проектах и однажды мне довелось столкнуться с миром веб
+            разработки. С этого момента я понял, что создание современных веб
+            приложений и их визуальной составляющей это моё призвание. Если Вам
+            нужен молодой специалист с огромным интересом к веб разработке,
+            опытом работы в команде над различными проектами, то прошу связаться
+            со мной по телефону и e-mail на Ваш выбор.
           </p>
 
           <div class="resume-download">
-            <div class="resume-btn">
-              <div class="resume-btn_wrapper">
-                <a href="#" class="resume-btn_link btn-dark"
-                  ><i class="fa fa-download"></i>Download Resume</a
-                >
-              </div>
-            </div>
+            <a
+              href="https://drive.google.com/file/d/1Blqe22q-yw5fMIK8MvwTWy_0-1LkT_E7/view?usp=sharing"
+              class="resume-btn btn-dark"
+              download
+              target="_blank"
+            >
+              <i class="fa fa-download"> </i>
+              Скачать резюме
+            </a>
           </div>
         </div>
       </div>
@@ -107,7 +110,7 @@
     <section id="skills" class="skills pageSection">
       <div class="skillset">
         <div class="skillset-header">
-          <h2 class="lg-heading"><span>Skills</span></h2>
+          <h2 class="lg-heading"><span>Навыки</span></h2>
           <i class="fas fa-laptop-code fa-2x"></i>
         </div>
         <div class="skillset-main">
@@ -146,7 +149,7 @@
 
       <div class="tools">
         <div class="tools-header">
-          <h2 class="lg-heading"><span>Tools</span></h2>
+          <h2 class="lg-heading"><span>Тулзы</span></h2>
           <i class="fas fa-screwdriver fa-2x"></i>
         </div>
         <div class="tools-main">
@@ -176,23 +179,72 @@
     <section id="portfolio" class="portfolio pageSection">
       <div class="portfolio-head">
         <h2 class="lg-heading">
-          My Work
+          Мои проекты
         </h2>
         <h3 class="sm-heading">
-          Check out some of my projects...
+          Здесь вы можете взглянуть на некоторые из моих личных проектов
         </h3>
       </div>
       <div class="portfolio-projects">
         <div class="portfolio-projects_item">
-          <a href="https://gmatorin.github.io/LocalCoffee/" target="_blank">
+          <a href="https://gmatorin.github.io/ImageFinder/" target="_blank">
             <img src="images/projects/project1.png" alt="Project" />
           </a>
           <div class="project-description">
-            <h2 class="sm-heading">Project 1</h2>
+            <h2 class="sm-heading">ImageFinder</h2>
             <p class="regular-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              nostrum sed fugiat voluptatem in excepturi.
+              Приложение для нахождения бесплатных фотографий.
             </p>
+            <ul>
+              <li>Реализация при помощи React JS</li>
+              <li>
+                Context API для обновления стейтов и передачи данных
+              </li>
+              <li>Загрузка фото при помощи Axios</li>
+              <li>
+                Создание стейтов в функциональных компонентах с React Hooks
+              </li>
+              <li>
+                Вёрстка с компонентами от Material UI и Bootstrap для React
+              </li>
+            </ul>
+          </div>
+          <div class="project-buttons">
+            <a
+              href="https://gmatorin.github.io/ImageFinder/"
+              class="btn-light"
+              target="_blank"
+            >
+              <i class="fas fa-eye"></i> Проект
+            </a>
+            <a
+              href="https://github.com/GMatorin/ImageFinder"
+              class="btn-dark"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i> Github
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-projects_item">
+          <a href="https://gmatorin.github.io/LocalCoffee/" target="_blank">
+            <img src="images/projects/project2.png" alt="Project" />
+          </a>
+          <div class="project-description">
+            <h2 class="sm-heading">Local Coffee</h2>
+            <p class="regular-text">
+              Лэндинг для кофейни.
+            </p>
+            <ul>
+              <li>Адаптивная реализация сайта под разные размеры экранов</li>
+              <li>Стили прописаны при помощи SASS</li>
+              <li>Для компиляции CSS файла был использован node-sass</li>
+              <li>
+                Самостоятельное планирование UI/UX сайта и создание макета в
+                Adobe XD
+              </li>
+              <li>Интеграция Google карты</li>
+            </ul>
           </div>
           <div class="project-buttons">
             <a
@@ -200,7 +252,7 @@
               class="btn-light"
               target="_blank"
             >
-              <i class="fas fa-eye"></i> Project
+              <i class="fas fa-eye"></i> Проект
             </a>
             <a
               href="https://github.com/GMatorin/LocalCoffee"
@@ -213,14 +265,22 @@
         </div>
         <div class="portfolio-projects_item">
           <a href="https://gmatorin.github.io/CitiesFight/" target="_blank">
-            <img src="images/projects/project2.png" alt="Project" />
+            <img src="images/projects/project3.png" alt="Project" />
           </a>
           <div class="project-description">
-            <h2 class="sm-heading">Project 2</h2>
+            <h2 class="sm-heading">CitiesFight</h2>
             <p class="regular-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              nostrum sed fugiat voluptatem in excepturi.
+              Приложение для сравнения городов США по численности населения.
             </p>
+            <ul>
+              <li>Использование только нативного JavaScript</li>
+              <li>
+                Применение функций высшего порядка из ES6
+              </li>
+              <li>Fetch API для загрузки данных</li>
+              <li>Bootstrap вёрстка</li>
+              <li>Локализация багов при помощи Google developer tools</li>
+            </ul>
           </div>
           <div class="project-buttons">
             <a
@@ -228,33 +288,13 @@
               class="btn-light"
               target="_blank"
             >
-              <i class="fas fa-eye"></i> Project
+              <i class="fas fa-eye"></i> Проект
             </a>
             <a
               href="https://github.com/GMatorin/CitiesFight"
               class="btn-dark"
               target="_blank"
             >
-              <i class="fab fa-github"></i> Github
-            </a>
-          </div>
-        </div>
-        <div class="portfolio-projects_item">
-          <a href="#!" target="_blank">
-            <img src="images/projects/project3.jpg" alt="Project" />
-          </a>
-          <div class="project-description">
-            <h2 class="sm-heading">Project 3</h2>
-            <p class="regular-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-              nostrum sed fugiat voluptatem in excepturi.
-            </p>
-          </div>
-          <div class="project-buttons">
-            <a href="#" class="btn-light" target="_blank">
-              <i class="fas fa-eye"></i> Project
-            </a>
-            <a href="#" class="btn-dark" target="_blank">
               <i class="fab fa-github"></i> Github
             </a>
           </div>
@@ -266,31 +306,31 @@
     <!-- Contact Section -->
     <section id="contact" class="contact pageSection">
       <div class="contact-header">
-        <h2 class="lg-heading">Contact Me</h2>
+        <h2 class="lg-heading">Мои контакты</h2>
       </div>
       <div class="contact-infos">
         <div class="contact-infos_item">
           <div class="item-heading">
             <i class="fas fa-map-marker-alt fa-2x"></i>
-            <h3 class="sm-heading">Address</h3>
+            <h3 class="sm-heading">Адрес</h3>
           </div>
           <p class="regular-text">
-            Upper East Side, NYC
+            Площадь К.Маркса, Новосибирск
           </p>
         </div>
         <div class="contact-infos_item">
           <div class="item-heading">
             <i class="fa fa-mobile-alt fa-2x"></i>
-            <h3 class="sm-heading">Phone</h3>
+            <h3 class="sm-heading">Телефон</h3>
           </div>
-          <a href="tel:1-111-222-333">+1 111 222 333</a>
+          <a href="tel:7-953-893-26-69">+7 953 893 26 69</a>
         </div>
         <div class="contact-infos_item">
           <div class="item-heading">
             <i class="fa fa-paper-plane fa-2x"></i>
             <h3 class="sm-heading">Email</h3>
           </div>
-          <a href="mailto:gleb.matorin@gmail.com">gleb.matorin@gmail.com</a>
+          <a href="mailto:matorindev@gmail.com">matorindev@gmail.com</a>
         </div>
       </div>
     </section>
@@ -310,8 +350,8 @@
         <a href="https://www.facebook.com/gottlieb.matorin" target="_blank">
           <i class="fab fa-facebook fa-2x"></i>
         </a>
-        <a href="#!" target="_blank">
-          <i class="fab fa-linkedin fa-2x"></i>
+        <a href="https://vk.com/g14662799" target="_blank">
+          <i class="fab fa-vk fa-2x"></i>
         </a>
         <a href="https://github.com/GMatorin" target="_blank">
           <i class="fab fa-github fa-2x"></i>
@@ -319,7 +359,7 @@
       </div>
 
       <h2 class="sm-heading">
-        Gleb Matorin
+        Глеб Маторин
       </h2>
     </footer>
     <!-- Footer End-->

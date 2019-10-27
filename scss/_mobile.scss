@@ -1,30 +1,82 @@
-@include mediaXl {
+@include mediaXXl {
   #menu {
     &-ul {
-      width: 45%;
+      width: 55%;
     }
   }
+
   #home {
     .header-info {
       top: 17%;
+      h1 {
+        margin-bottom: 0.6rem;
+      }
+      .lg-heading {
+        width: 90%;
+      }
+      &_content {
+        width: 70%;
+      }
+    }
+  }
+  .about {
+    padding: 4em 0 5rem 0;
+  }
 
+  .portfolio {
+    padding: 3em 0;
+    &-projects {
+      display: block;
+      padding: 3em 0 2em 0;
+      width: 55%;
+      &_item {
+        margin-bottom: 3em;
+      }
+    }
+  }
+}
+
+@include mediaXl {
+  #menu {
+    &-ul {
+      width: 50%;
+    }
+  }
+  #home {
+    background-position: 0% 0%;
+    .header-info {
+      top: 17%;
+      h1 {
+        margin-bottom: 0.6rem;
+      }
+      .lg-heading {
+        width: 90%;
+      }
+      &_content {
+        width: 70%;
+      }
       &_social {
-        margin-top: 1.5em;
+        padding-top: 9em;
+        width: 40%;
+        li {
+          height: 3.2rem;
+          width: 3.2rem;
+          background: rgba(255, 255, 255, 0.6);
+          border-radius: 50%;
+          a {
+            color: darken($aqua-blue, 10);
+            &:hover {
+              color: darken($aqua-blue, 25);
+            }
+          }
+        }
       }
     }
   }
 }
 
 @include mediaLg {
-  html,
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  }
   #menu {
-    a {
-      font-size: 1.1rem;
-    }
     &-ul {
       width: 55%;
     }
@@ -37,21 +89,36 @@
       &_content {
         width: 70%;
         h1 {
-          font-size: 4rem;
+          margin-bottom: 0.6rem;
+          font-size: 3.5rem;
+          line-height: 3.7rem;
         }
         .lg-heading {
-          font-size: 1.2rem;
+          font-size: 1.7rem;
+          width: 100%;
         }
       }
       &_social {
-        margin-top: 1.3em;
+        padding-top: 9rem;
+        width: 45%;
+        li {
+          height: 3.2rem;
+          width: 3.2rem;
+          background: rgba(255, 255, 255, 0.6);
+          border-radius: 50%;
+          a {
+            color: darken($aqua-blue, 10);
+            &:hover {
+              color: darken($aqua-blue, 25);
+            }
+          }
+        }
       }
     }
   }
 
   .about {
     flex-direction: column;
-    //height: 105vh;
     display: block;
     padding: 3em 0;
     &-img {
@@ -70,6 +137,7 @@
 
       .resume-download {
         display: block;
+        padding-top: 2.5rem;
       }
     }
   }
@@ -78,13 +146,14 @@
     // height: 110vh;
     display: block;
     .skillset {
+      padding: 3rem 0 0 0;
       &-main {
         border-right: none;
       }
       &::after {
         content: '';
         display: block;
-        margin: 2em auto 2em auto;
+        margin: 3em auto 3em auto;
         //top: 20%;
         background-color: lighten($dark-blue, 15);
         height: 1px;
@@ -97,17 +166,6 @@
     }
   }
 
-  .portfolio {
-    padding: 3em 0;
-    &-projects {
-      display: block;
-      padding: 2em 0 2em 0;
-      width: 55%;
-      &_item {
-        margin-bottom: 3em;
-      }
-    }
-  }
   .contact {
     padding: 3em 0;
     &-infos {
@@ -117,6 +175,53 @@
         display: block;
         width: 50%;
         margin: 0 auto 2em auto;
+      }
+    }
+  }
+  .portfolio {
+    &-projects {
+      width: 75%;
+    }
+  }
+}
+
+@include mediaLMd {
+  #menu {
+    &-ul {
+      width: 70%;
+    }
+  }
+
+  #home {
+    .header-info {
+      top: 20%;
+
+      &_content {
+        width: 73%;
+        h1 {
+          font-size: 3rem;
+          line-height: 3.4rem;
+        }
+        .lg-heading {
+          font-size: 1.7rem;
+          width: 100%;
+        }
+      }
+      &_social {
+        padding-top: 8rem;
+        width: 53%;
+        li {
+          height: 3.2rem;
+          width: 3.2rem;
+          background: rgba(255, 255, 255, 0.6);
+          border-radius: 50%;
+          a {
+            color: darken($aqua-blue, 10);
+            &:hover {
+              color: darken($aqua-blue, 25);
+            }
+          }
+        }
       }
     }
   }
@@ -131,36 +236,40 @@
   }
   #menu {
     a {
-      font-size: 0.85rem;
+      font-size: 0.9rem;
     }
     &-ul {
-      width: 60%;
+      width: 83%;
     }
   }
 
   #home {
     .header-info {
-      top: 24%;
+      top: 21%;
       &_content {
-        width: 70%;
+        width: 81%;
         h1 {
-          font-size: 3.2rem;
+          font-size: 2.8rem;
         }
         .lg-heading {
-          font-size: 1rem;
+          font-size: 1.4rem;
         }
       }
       &_social {
+        padding-top: 10rem;
         margin-top: 1.3em;
-        width: 50%;
+        width: 70%;
       }
     }
   }
-
   .about {
-    //height: 120vh;
+    &-info_content {
+      width: 100%;
+      .regular-text {
+        font-size: 1rem;
+      }
+    }
   }
-
   #skills {
     .skillset-main,
     .tools-main {
@@ -169,8 +278,11 @@
   }
 
   .portfolio {
+    &-head {
+      padding: 0 0.5rem;
+    }
     &-projects {
-      width: 70%;
+      width: 85%;
     }
   }
   .contact {
@@ -185,27 +297,28 @@
 @include mediaSm {
   #menu {
     a {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
     &-ul {
-      width: 75%;
+      width: 93%;
     }
   }
 
   #home {
+    background-position: 12% 0%;
     .header-info {
+      top: 22%;
       &_content {
-        width: 80%;
+        width: 90%;
         h1 {
           font-size: 2.5rem;
         }
         .lg-heading {
-          font-size: 1.1rem;
+          font-size: 1.3rem;
         }
       }
       &_social {
-        margin-top: 1.7em;
-        width: 65%;
+        width: 80%;
       }
     }
   }
@@ -217,7 +330,6 @@
   }
 
   #skills {
-    //height: 150vh;
     .skillset-main,
     .tools-main {
       grid-template-columns: repeat(2, 1fr);
@@ -226,7 +338,8 @@
 
   .portfolio {
     .sm-heading {
-      font-size: 1.15em;
+      font-size: 1em;
+      padding: 0 0.5rem;
     }
     &-projects {
       width: 80%;
@@ -238,6 +351,7 @@
       width: 90%;
       p.regular-text {
         font-size: 1.1rem;
+        padding: 0 0.3rem;
       }
     }
   }
@@ -246,19 +360,26 @@
 @include mediaXs {
   #menu {
     a {
-      font-size: 0.8rem;
+      font-size: 0.73rem;
     }
     &-ul {
-      width: 85%;
+      width: 95%;
     }
   }
 
   #home {
-    background-position: 13%;
+    background-position: 18%;
     .header-info {
+      top: 25%;
       &_content {
+        width: 95%;
         h1 {
-          font-size: 2.4rem;
+          font-size: 2.2rem;
+          line-height: 2.4rem;
+        }
+        .lg-heading {
+          font-size: 1.3rem;
+          line-height: 1.9rem;
         }
       }
     }
@@ -269,19 +390,21 @@
   #home {
     background-position: 18%;
     .header-info {
-      top: 20%;
+      top: 27%;
       &_content {
         width: 85%;
         h1 {
-          font-size: 2.5rem;
+          font-size: 2rem;
+          line-height: 2.2rem;
         }
         .lg-heading {
-          font-size: 1rem;
+          padding-top: 0.5rem;
+          font-size: 1.2rem;
         }
       }
       &_social {
-        margin-top: 1em;
-        width: 45%;
+        width: 50%;
+        padding-top: 7rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -294,17 +417,12 @@
   }
 
   .about {
-    // height: 160vh;
     &-img {
       .profile-img {
         width: 170px;
         height: 170px;
       }
     }
-  }
-
-  #skills {
-    // height: 170vh;
   }
 
   .portfolio {
