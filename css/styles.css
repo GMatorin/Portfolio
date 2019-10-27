@@ -400,17 +400,8 @@ footer {
       #home .header-info_content {
         width: 70%; }
       #home .header-info_social {
-        padding-top: 9em;
-        width: 40%; }
-        #home .header-info_social li {
-          height: 3.2rem;
-          width: 3.2rem;
-          background: rgba(255, 255, 255, 0.6);
-          border-radius: 50%; }
-          #home .header-info_social li a {
-            color: #0192bc; }
-            #home .header-info_social li a:hover {
-              color: #005770; } }
+        padding-top: 0em;
+        width: 40%; } }
 
 @media screen and (max-width: 1069px) {
   #menu-ul {
@@ -487,7 +478,7 @@ footer {
   #home .header-info {
     top: 20%; }
     #home .header-info_content {
-      width: 73%; }
+      width: 71%; }
       #home .header-info_content h1 {
         font-size: 3rem;
         line-height: 3.4rem; }
@@ -495,7 +486,7 @@ footer {
         font-size: 1.7rem;
         width: 100%; }
     #home .header-info_social {
-      padding-top: 8rem;
+      padding-top: 5.5rem;
       width: 53%; }
       #home .header-info_social li {
         height: 3.2rem;
@@ -525,7 +516,7 @@ footer {
       #home .header-info_content .lg-heading {
         font-size: 1.4rem; }
     #home .header-info_social {
-      padding-top: 10rem;
+      padding-top: 6rem;
       margin-top: 1.3em;
       width: 70%; }
   .about-info_content {
@@ -558,7 +549,8 @@ footer {
         #home .header-info_content .lg-heading {
           font-size: 1.3rem; }
       #home .header-info_social {
-        width: 80%; }
+        width: 80%;
+        padding-top: 5rem; }
   #about .regular-text {
     font-size: 0.9rem; }
   #skills .skillset-main,
@@ -591,7 +583,10 @@ footer {
           line-height: 2.4rem; }
         #home .header-info_content .lg-heading {
           font-size: 1.3rem;
-          line-height: 1.9rem; } }
+          line-height: 1.9rem; }
+      #home .header-info_social {
+        width: 75%;
+        padding-top: 4rem; } }
 
 @media screen and (max-width: 340px) {
   #home {
@@ -608,7 +603,7 @@ footer {
           font-size: 1.2rem; }
       #home .header-info_social {
         width: 50%;
-        padding-top: 7rem;
+        padding-top: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around; }
