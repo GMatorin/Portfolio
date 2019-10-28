@@ -100,7 +100,7 @@ body {
     #home .header-info_content {
       display: flex;
       flex-direction: column;
-      width: 55%;
+      width: 53%;
       margin: 0 auto; }
     #home .header-info .lg-heading {
       width: 85%;
@@ -374,7 +374,7 @@ footer {
     #home .header-info .lg-heading {
       width: 90%; }
     #home .header-info_content {
-      width: 70%; }
+      width: 60%; }
   .about {
     padding: 4em 0 5rem 0; }
   .portfolio {
@@ -382,7 +382,7 @@ footer {
     .portfolio-projects {
       display: block;
       padding: 3em 0 2em 0;
-      width: 55%; }
+      width: 40%; }
       .portfolio-projects_item {
         margin-bottom: 3em; } }
 
