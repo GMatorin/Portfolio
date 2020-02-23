@@ -102,15 +102,17 @@ body {
       flex-direction: column;
       width: 53%;
       margin: 0 auto; }
-    #home .header-info .lg-heading {
-      width: 85%;
-      margin: 0 auto;
-      font-size: 1.9rem; }
+      #home .header-info_content h1 {
+        margin-bottom: 0; }
+      #home .header-info_content .lg-heading {
+        width: 85%;
+        margin: 1rem auto;
+        font-size: 1.9rem; }
     #home .header-info_social {
       width: 30%;
       display: flex;
       margin: 0 auto;
-      margin-top: 2.5em;
+      margin-top: 3.5rem;
       list-style-type: none;
       justify-content: space-between;
       z-index: 2; }
@@ -272,7 +274,8 @@ body {
           filter: brightness(75%);
           transition: all 0.3s ease-in; }
       .portfolio-projects_item .project-description {
-        padding: 0.7em; }
+        padding: 0.7em;
+        height: 350px; }
         .portfolio-projects_item .project-description h2 {
           text-align: center; }
           .portfolio-projects_item .project-description h2::after {
@@ -364,17 +367,44 @@ footer {
     footer .icons a {
       margin: 0 1em 0 1em; }
 
+@media screen and (max-width: 2100px) {
+  #menu a {
+    font-size: 1.6rem; }
+  #home .header-info_content h1 {
+    font-size: 6.5rem;
+    line-height: 6.7rem; }
+  #home .header-info_content .lg-heading {
+    font-size: 2.7rem;
+    width: 100%; }
+  .portfolio-projects_item .project-description {
+    height: 370px; } }
+
+@media screen and (max-width: 1800px) {
+  #menu a {
+    font-size: 1.2rem; }
+  #home .header-info_content h1 {
+    font-size: 4.8rem;
+    line-height: 5rem; }
+  #home .header-info_content .lg-heading {
+    font-size: 2.2rem; }
+  .portfolio-projects_item .project-description {
+    height: 430px; } }
+
 @media screen and (max-width: 1450px) {
+  #menu a {
+    font-size: 1.2rem; }
   #menu-ul {
-    width: 55%; }
+    width: 45%; }
   #home .header-info {
     top: 17%; }
-    #home .header-info h1 {
-      margin-bottom: 0.6rem; }
-    #home .header-info .lg-heading {
-      width: 90%; }
     #home .header-info_content {
       width: 60%; }
+      #home .header-info_content h1 {
+        font-size: 4.2rem;
+        line-height: 4.3rem; }
+      #home .header-info_content .lg-heading {
+        font-size: 2.1rem;
+        width: 95%; }
   .about {
     padding: 4em 0 5rem 0; }
   .portfolio {
@@ -382,44 +412,42 @@ footer {
     .portfolio-projects {
       display: block;
       padding: 3em 0 2em 0;
-      width: 40%; }
+      width: 55%; }
       .portfolio-projects_item {
-        margin-bottom: 3em; } }
+        margin-bottom: 3em; }
+        .portfolio-projects_item .project-description {
+          height: initial; } }
 
-@media screen and (min-width: 1070px) and (max-width: 1200px) {
-  #menu-ul {
-    width: 50%; }
+@media screen and (max-width: 1200px) {
   #home {
     background-position: 0% 0%; }
     #home .header-info {
       top: 17%; }
-      #home .header-info h1 {
-        margin-bottom: 0.6rem; }
       #home .header-info .lg-heading {
         width: 90%; }
       #home .header-info_content {
         width: 70%; }
       #home .header-info_social {
-        padding-top: 0em;
-        width: 40%; } }
+        margin-top: 2rem;
+        width: 30%; } }
 
 @media screen and (max-width: 1069px) {
+  #menu a {
+    font-size: 1rem; }
   #menu-ul {
-    width: 55%; }
+    width: 50%; }
   #home .header-info {
-    top: 17%; }
+    top: 20%; }
     #home .header-info_content {
       width: 70%; }
       #home .header-info_content h1 {
-        margin-bottom: 0.6rem;
         font-size: 3.5rem;
         line-height: 3.7rem; }
       #home .header-info_content .lg-heading {
         font-size: 1.7rem;
         width: 100%; }
     #home .header-info_social {
-      padding-top: 9rem;
-      width: 45%; }
+      width: 49%; }
       #home .header-info_social li {
         height: 3.2rem;
         width: 3.2rem;
@@ -470,7 +498,9 @@ footer {
         width: 50%;
         margin: 0 auto 2em auto; }
   .portfolio-projects {
-    width: 75%; } }
+    width: 56%; }
+  .portfolio .project-description {
+    height: initial; } }
 
 @media screen and (max-width: 900px) {
   #menu-ul {
@@ -486,8 +516,8 @@ footer {
         font-size: 1.7rem;
         width: 100%; }
     #home .header-info_social {
-      padding-top: 5.5rem;
-      width: 53%; }
+      width: 60%;
+      margin-top: 8rem; }
       #home .header-info_social li {
         height: 3.2rem;
         width: 3.2rem;
@@ -506,9 +536,9 @@ footer {
   #menu a {
     font-size: 0.9rem; }
   #menu-ul {
-    width: 83%; }
+    width: 80%; }
   #home .header-info {
-    top: 21%; }
+    top: 19%; }
     #home .header-info_content {
       width: 81%; }
       #home .header-info_content h1 {
@@ -516,8 +546,7 @@ footer {
       #home .header-info_content .lg-heading {
         font-size: 1.4rem; }
     #home .header-info_social {
-      padding-top: 6rem;
-      margin-top: 1.3em;
+      margin-top: 7em;
       width: 70%; }
   .about-info_content {
     width: 100%; }
@@ -529,19 +558,19 @@ footer {
   .portfolio-head {
     padding: 0 0.5rem; }
   .portfolio-projects {
-    width: 85%; }
+    width: 70%; }
   .contact-infos_item {
-    width: 70%; } }
+    width: 60%; } }
 
 @media screen and (max-width: 500px) {
   #menu a {
     font-size: 0.8rem; }
   #menu-ul {
-    width: 93%; }
+    width: 90%; }
   #home {
     background-position: 12% 0%; }
     #home .header-info {
-      top: 22%; }
+      top: 18%; }
       #home .header-info_content {
         width: 90%; }
         #home .header-info_content h1 {
@@ -550,7 +579,7 @@ footer {
           font-size: 1.3rem; }
       #home .header-info_social {
         width: 80%;
-        padding-top: 5rem; }
+        margin-top: 8rem; }
   #about .regular-text {
     font-size: 0.9rem; }
   #skills .skillset-main,
@@ -561,6 +590,9 @@ footer {
     padding: 0 0.5rem; }
   .portfolio-projects {
     width: 80%; }
+    .portfolio-projects p, .portfolio-projects li, .portfolio-projects a {
+      font-size: 1rem;
+      line-height: 1.7rem; }
   .contact-infos_item {
     width: 90%; }
     .contact-infos_item p.regular-text {
@@ -571,13 +603,13 @@ footer {
   #menu a {
     font-size: 0.73rem; }
   #menu-ul {
-    width: 95%; }
+    width: 90%; }
   #home {
     background-position: 18%; }
     #home .header-info {
       top: 25%; }
       #home .header-info_content {
-        width: 95%; }
+        width: 93%; }
         #home .header-info_content h1 {
           font-size: 2.2rem;
           line-height: 2.4rem; }
@@ -586,13 +618,16 @@ footer {
           line-height: 1.9rem; }
       #home .header-info_social {
         width: 75%;
-        padding-top: 4rem; } }
+        margin-top: 5rem; }
+  #portfolio .portfolio-projects p, #portfolio .portfolio-projects li, #portfolio .portfolio-projects a {
+    font-size: .8rem;
+    line-height: 1.7rem; } }
 
 @media screen and (max-width: 340px) {
   #home {
     background-position: 18%; }
     #home .header-info {
-      top: 27%; }
+      top: 18%; }
       #home .header-info_content {
         width: 85%; }
         #home .header-info_content h1 {
@@ -602,14 +637,8 @@ footer {
           padding-top: 0.5rem;
           font-size: 1.2rem; }
       #home .header-info_social {
-        width: 50%;
-        padding-top: 2rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around; }
-        #home .header-info_social li {
-          margin-bottom: 0.5em;
-          flex-basis: 40%; }
+        width: 75%;
+        margin-top: 7rem; }
   .about-img .profile-img {
     width: 170px;
     height: 170px; }

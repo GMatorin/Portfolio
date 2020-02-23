@@ -56,19 +56,22 @@ body {
       flex-direction: column;
       width: 53%;
       margin: 0 auto;
-    }
 
-    .lg-heading {
-      width: 85%;
-      margin: 0 auto;
-      font-size: 1.9rem;
+      h1{
+        margin-bottom: 0;
+      }
+      .lg-heading {
+        width: 85%;
+        margin: 1rem auto;
+        font-size: 1.9rem;
+      }
     }
 
     &_social {
       width: 30%;
       display: flex;
       margin: 0 auto;
-      margin-top: 2.5em;
+      margin-top: 3.5rem;
       list-style-type: none;
       justify-content: space-between;
       z-index: 2;
@@ -169,19 +172,12 @@ body {
     @include skills();
     &-main {
       border-right: 1px solid lighten($dark-blue, 15);
-      h3 {
-        //color: lighten($tiffany-blue, 10);
-      }
+
     }
   }
 
   .tools {
     @include skills();
-    &-main {
-      h3 {
-        //color: lighten($aqua-blue, 5);
-      }
-    }
   }
 }
 
@@ -219,6 +215,7 @@ body {
 
       .project-description {
         padding: 0.7em;
+        height: 350px;
         h2 {
           text-align: center;
           &::after {
