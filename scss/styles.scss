@@ -172,7 +172,13 @@ body {
     @include skills();
     &-main {
       border-right: 1px solid lighten($dark-blue, 15);
-
+    .rxjs, .ts{
+      width: 55px;
+      margin: 0 auto;
+      h3{
+        margin-top: .6rem;
+      }
+    }
     }
   }
 
@@ -215,7 +221,7 @@ body {
 
       .project-description {
         padding: 0.7em;
-        height: 350px;
+        height: 310px;
         h2 {
           text-align: center;
           &::after {

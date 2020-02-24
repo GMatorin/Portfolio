@@ -214,6 +214,11 @@ body {
           font-size: 1.2em; }
     .skills .skillset-main {
       border-right: 1px solid #5d8dca; }
+      .skills .skillset-main .rxjs, .skills .skillset-main .ts {
+        width: 55px;
+        margin: 0 auto; }
+        .skills .skillset-main .rxjs h3, .skills .skillset-main .ts h3 {
+          margin-top: .6rem; }
   .skills .tools {
     flex: 1;
     padding: 4em 0; }
@@ -275,7 +280,7 @@ body {
           transition: all 0.3s ease-in; }
       .portfolio-projects_item .project-description {
         padding: 0.7em;
-        height: 350px; }
+        height: 310px; }
         .portfolio-projects_item .project-description h2 {
           text-align: center; }
           .portfolio-projects_item .project-description h2::after {
@@ -375,9 +380,7 @@ footer {
     line-height: 6.7rem; }
   #home .header-info_content .lg-heading {
     font-size: 2.7rem;
-    width: 100%; }
-  .portfolio-projects_item .project-description {
-    height: 370px; } }
+    width: 100%; } }
 
 @media screen and (max-width: 1800px) {
   #menu a {
@@ -388,7 +391,7 @@ footer {
   #home .header-info_content .lg-heading {
     font-size: 2.2rem; }
   .portfolio-projects_item .project-description {
-    height: 430px; } }
+    height: 370px; } }
 
 @media screen and (max-width: 1450px) {
   #menu a {

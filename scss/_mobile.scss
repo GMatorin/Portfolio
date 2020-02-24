@@ -16,12 +16,6 @@
         }
     }
   }
-
-  .portfolio-projects_item{
-    .project-description{
-      height: 370px;
-    }
-  }
 }
 
 @include mediaXXXl {
@@ -45,7 +39,7 @@
   }
   .portfolio-projects_item{
     .project-description{
-      height: 430px;
+      height: 370px;
     }
   }
 }
