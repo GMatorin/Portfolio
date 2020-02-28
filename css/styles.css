@@ -305,7 +305,8 @@ body {
           color: #c8cbce;
           border: #777f86 1px solid;
           border-radius: 5px;
-          text-align: center; }
+          text-align: center;
+          max-height: 36px; }
           .portfolio-projects_item .project-buttons a:hover {
             transition: all 0.3s ease-in;
             background: #152840; }
@@ -562,6 +563,8 @@ footer {
     padding: 0 0.5rem; }
   .portfolio-projects {
     width: 70%; }
+    .portfolio-projects .project-buttons a {
+      max-height: 26px; }
   .contact-infos_item {
     width: 60%; } }
 
