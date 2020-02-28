@@ -255,6 +255,7 @@ body {
           border: darken($light-gray, 30) 1px solid;
           border-radius: 5px;
           text-align: center;
+          max-height: 36px;
           &:hover {
             @include easeIn();
             background: darken($dark-blue, 26);

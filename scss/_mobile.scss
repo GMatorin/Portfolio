@@ -321,6 +321,11 @@
     }
     &-projects {
       width: 70%;
+      .project-buttons{
+        a{
+          max-height: 26px;
+        }
+      }
     }
   }
   .contact {
