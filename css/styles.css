@@ -613,7 +613,7 @@ footer {
   #home {
     background-position: 18%; }
     #home .header-info {
-      top: 25%; }
+      top: 23%; }
       #home .header-info_content {
         width: 93%; }
         #home .header-info_content h1 {
@@ -624,7 +624,7 @@ footer {
           line-height: 1.9rem; }
       #home .header-info_social {
         width: 75%;
-        margin-top: 5rem; }
+        margin-top: 4.5rem; }
   #portfolio .portfolio-projects p, #portfolio .portfolio-projects li, #portfolio .portfolio-projects a {
     font-size: .8rem;
     line-height: 1.7rem; } }
